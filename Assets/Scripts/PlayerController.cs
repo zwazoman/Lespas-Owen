@@ -1,25 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Playercontroller : MonoBehaviour
 {
+    private PlayerControls playerControls;
     Rigidbody2D rb;
-    float speed;
+    float moveSpeed;
     [SerializeField] CharacterClass infos;
 
     private void Awake()
     {
+        playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
-        speed = infos.speed;
+        moveSpeed = infos.speed;
+    }
+    
+    private void OnShoot()
+    {
+        //Instantiate(infos.bullet);
     }
 
-    void FixedUpdate()
+    private void OnSpecial()
     {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
-        Vector2 direction = new Vector2(x, y);
-        rb.velocity = direction * speed * Time.fixedDeltaTime;
+
     }
-   
+
+    private void OnMove(InputValue inputValue)
+    {
+        rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
+        print("move");
+
+    }
+
 }
