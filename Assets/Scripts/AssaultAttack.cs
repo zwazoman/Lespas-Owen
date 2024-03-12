@@ -10,9 +10,9 @@ public class AssaultAttack : Attack
 
     public override void Shoot()
     {
-        StartCoroutine(SwitchCanon());
+        StartCoroutine(AssaultShoot());
     }
-    IEnumerator SwitchCanon()
+    IEnumerator AssaultShoot()
     {
         Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.1f);

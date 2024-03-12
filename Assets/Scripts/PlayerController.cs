@@ -1,30 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Playercontroller : MonoBehaviour
 {
+    public static Playercontroller instance;
+
     private PlayerControls playerControls;
     Rigidbody2D rb;
     float moveSpeed;
     [SerializeField] CharacterClass infos;
-    [SerializeField] Attack Attackscript;
+    [SerializeField] Attack attackscript;
     //[SerializeField] GameObject shootZone;
     //[SerializeField] GameObject shootZone2;
 
     private void Awake()
     {
+        instance = this;
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = infos.speed;
-        Attackscript.bullet = infos.bullet;
+        attackscript.bullet = infos.bullet;
     }
     
     private void OnShoot()
     {
         //StartCoroutine(SwitchCanon());
-        Attackscript.Shoot();
+        attackscript.Shoot();
     }
 
     private void OnSpecial()
