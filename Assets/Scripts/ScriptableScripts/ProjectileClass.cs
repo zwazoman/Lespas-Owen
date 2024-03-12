@@ -13,4 +13,6 @@ public class ProjectileClass : ScriptableObject
     internal int damages;
     [SerializeField]
     internal int timeToScreen;
+    [SerializeField]
+    internal Vector2 shootDirection;
 }

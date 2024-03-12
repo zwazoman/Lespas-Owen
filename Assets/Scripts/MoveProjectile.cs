@@ -14,15 +14,17 @@ public class MoveProjectile : MonoBehaviour
     [SerializeField] 
     private int damageProjectile;
     [SerializeField]
-    private int timeToLive; 
+    private int timeToLive;
+    private Vector2 riffleDirection;
 
     private void Awake()
     {
         projectileSpeed = projectileClass.speed;
+        riffleDirection = projectileClass.shootDirection;
     }
     private void FixedUpdate()
     {
-        transform.Translate(Vector2.up * projectileSpeed * Time.deltaTime);
+        transform.Translate(riffleDirection * projectileSpeed * Time.deltaTime);
     }
 
 }

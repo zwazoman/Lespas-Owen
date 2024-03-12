@@ -109,13 +109,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: VelocityL
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -146,9 +146,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.53643394
-  m_TransitionOffset: 5
-  m_ExitTime: 0.00000002826965
+  m_TransitionDuration: 0.99327093
+  m_TransitionOffset: 5.0000005
+  m_ExitTime: 0.000000031197292
   m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
