@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1900479122322637496}
   - component: {fileID: 6204344093472140784}
   - component: {fileID: 6905684421058847140}
+  - component: {fileID: 6756614565441972122}
   m_Layer: 6
   m_Name: Capsule
   m_TagString: Untagged
@@ -144,6 +145,27 @@ PolygonCollider2D:
       - {x: 0.025524275, y: 0.054061495}
       - {x: 0.018766385, y: 0.060000002}
   m_UseDelaunayMesh: 0
+--- !u!95 &6756614565441972122
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244072409400344982}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 110093270ba2ec242b42b0b4dbfd79ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3053069238252734403
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,8 +193,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1900479122322637496}
   m_Father: {fileID: 0}

@@ -40,8 +40,8 @@ public class Playercontroller : MonoBehaviour
     IEnumerator SwitchCanon()
     {
         Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.2f);
-        Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.1f);
+        Instantiate(infos.bullet, shootZone2.transform.position, Quaternion.identity);
     }
 
 }
