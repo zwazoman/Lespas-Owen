@@ -85,6 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
   Attackscript: {fileID: 3197584413838369717}
+  animator: {fileID: 3667311763124860461}
 --- !u!114 &3197584413838369717
 MonoBehaviour:
   m_ObjectHideFlags: 0

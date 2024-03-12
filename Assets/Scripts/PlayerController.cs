@@ -12,7 +12,7 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] Attack Attackscript;
     //[SerializeField] GameObject shootZone;
     //[SerializeField] GameObject shootZone2;
-
+    [SerializeField] Animator animator;
     private void Awake()
     {
         playerControls = new PlayerControls();
@@ -36,7 +36,7 @@ public class Playercontroller : MonoBehaviour
     {
         rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
         print("move");
-
+        animator.SetFloat("VelocityR", rb.velocity.x);
     }
 
 
