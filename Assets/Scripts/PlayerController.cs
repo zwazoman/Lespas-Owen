@@ -9,19 +9,22 @@ public class Playercontroller : MonoBehaviour
     Rigidbody2D rb;
     float moveSpeed;
     [SerializeField] CharacterClass infos;
-    [SerializeField] GameObject shootZone;
-    [SerializeField] GameObject shootZone2;
+    [SerializeField] Attack Attackscript;
+    //[SerializeField] GameObject shootZone;
+    //[SerializeField] GameObject shootZone2;
 
     private void Awake()
     {
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = infos.speed;
+        Attackscript.bullet = infos.bullet;
     }
     
     private void OnShoot()
     {
-        StartCoroutine(SwitchCanon());
+        //StartCoroutine(SwitchCanon());
+        Attackscript.Shoot();
     }
 
     private void OnSpecial()
@@ -37,11 +40,11 @@ public class Playercontroller : MonoBehaviour
     }
 
 
-    IEnumerator SwitchCanon()
+    /*IEnumerator SwitchCanon()
     {
         Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.1f);
         Instantiate(infos.bullet, shootZone2.transform.position, Quaternion.identity);
-    }
+    }*/
 
 }
