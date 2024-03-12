@@ -19,6 +19,6 @@ public class Enemy1Behaviour : MonoBehaviour
 
     private void Start()
     {
-        
+        rb.velocity = Vector2.down * speed * Time.deltaTime;
     }
 }
