@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 92c890a9093cd354c95d4fd3344adc65, type: 2}
-  attackscript: {fileID: 2828896203869947399}
+  attackScript: {fileID: 2828896203869947399}
 --- !u!114 &2828896203869947399
 MonoBehaviour:
   m_ObjectHideFlags: 0
