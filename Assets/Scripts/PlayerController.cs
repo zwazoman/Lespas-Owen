@@ -13,8 +13,6 @@ public class Playercontroller : MonoBehaviour
     float moveSpeed;
     [SerializeField] CharacterClass infos;
     [SerializeField] Attack attackscript;
-    //[SerializeField] GameObject shootZone;
-    //[SerializeField] GameObject shootZone2;
     [SerializeField] Animator animator;
     private void Awake()
     {
@@ -27,7 +25,6 @@ public class Playercontroller : MonoBehaviour
     
     private void OnShoot()
     {
-        //StartCoroutine(SwitchCanon());
         attackscript.Shoot();
     }
 
@@ -42,13 +39,4 @@ public class Playercontroller : MonoBehaviour
         print("move");
         animator.SetFloat("VelocityR", rb.velocity.x);
     }
-
-
-    /*IEnumerator SwitchCanon()
-    {
-        Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.1f);
-        Instantiate(infos.bullet, shootZone2.transform.position, Quaternion.identity);
-    }*/
-
 }
