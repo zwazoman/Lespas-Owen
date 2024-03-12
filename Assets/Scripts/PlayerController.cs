@@ -9,6 +9,8 @@ public class Playercontroller : MonoBehaviour
     Rigidbody2D rb;
     float moveSpeed;
     [SerializeField] CharacterClass infos;
+    [SerializeField] GameObject shootZone;
+    [SerializeField] GameObject shootZone2;
 
     private void Awake()
     {
@@ -19,7 +21,7 @@ public class Playercontroller : MonoBehaviour
     
     private void OnShoot()
     {
-        //Instantiate(infos.bullet);
+        StartCoroutine(SwitchCanon());
     }
 
     private void OnSpecial()
@@ -32,6 +34,14 @@ public class Playercontroller : MonoBehaviour
         rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
         print("move");
 
+    }
+
+
+    IEnumerator SwitchCanon()
+    {
+        Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.2f);
+        Instantiate(infos.bullet, shootZone.transform.position, Quaternion.identity);
     }
 
 }

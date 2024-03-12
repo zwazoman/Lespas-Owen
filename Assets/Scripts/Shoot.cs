@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Tire");
-            Instantiate(Ammo, new Vector2, Quaternion.identity);
+            Instantiate(Ammo);
         }
     }
 }
