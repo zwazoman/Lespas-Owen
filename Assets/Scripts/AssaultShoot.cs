@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class Shoot : MonoBehaviour
+public class AssaultShoot : MonoBehaviour
 {
     [SerializeField]
     private GameObject Ammo;
