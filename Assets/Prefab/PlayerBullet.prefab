@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1731618192053008519}
   - component: {fileID: 8362977389500245672}
   m_Layer: 0
-  m_Name: PlayerRiffle
+  m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
