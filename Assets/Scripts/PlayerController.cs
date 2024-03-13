@@ -11,6 +11,7 @@ public class Playercontroller : MonoBehaviour
     private PlayerControls playerControls;
     Rigidbody2D rb;
     float moveSpeed;
+    float rateOfFire;
     [SerializeField] CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
@@ -21,6 +22,8 @@ public class Playercontroller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = infos.speed;
         attackscript.bullet = infos.bullet;
+        rateOfFire = infos.rateOfFire;
+        attackscript.rateOfFire = rateOfFire;
     }
     
     private void OnShoot()

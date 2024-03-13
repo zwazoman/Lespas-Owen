@@ -9,7 +9,9 @@ public class CharacterClass : ScriptableObject
     public float speed { get; private set; }
 
     [field: SerializeField]
+    public float rateOfFire { get; private set; }
 
+    [field: SerializeField]
     public GameObject bullet { get; private set; }
 }
 

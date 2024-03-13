@@ -15,7 +15,7 @@ public class AssaultAttack : Attack
     IEnumerator AssaultShoot()
     {
         Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(rateOfFire);
         Instantiate(bullet, shootZone2.transform.position, Quaternion.identity);
     }
 }
