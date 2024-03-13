@@ -7,6 +7,7 @@ public class ProjectileClass : ScriptableObject
 {
     [field: SerializeField]
     public float speed { get; private set; }
-    [SerializeField]
+
+    [field: SerializeField]
     public float despawnTime { get; private set; }
 }
