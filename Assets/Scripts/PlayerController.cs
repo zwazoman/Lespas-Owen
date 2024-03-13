@@ -33,6 +33,7 @@ public class Playercontroller : MonoBehaviour
     public void OnShoot(InputAction.CallbackContext value)
     {
         attackscript.Shoot();
+        print("ntm");
     }
 
     private void OnSpecial()
