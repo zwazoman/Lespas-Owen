@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BulletTowardsTop : MonoBehaviour
+public class BulletTowardsLeft : MonoBehaviour
 {
     [SerializeField] 
     private ProjectileClass projectileClass;
@@ -17,9 +17,12 @@ public class BulletTowardsTop : MonoBehaviour
         despawnTime = projectileClass.despawnTime;
         Destroy(gameObject, despawnTime);
     }
+
     private void FixedUpdate()
     {
-        transform.Translate(Vector2.up * projectileSpeed * Time.deltaTime);
+        transform.Translate(Vector2.left * projectileSpeed * Time.deltaTime);
     }
+
+    
 
 }
