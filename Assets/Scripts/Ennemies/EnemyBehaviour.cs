@@ -27,4 +27,19 @@ public class EnemyBehaviour : MonoBehaviour
         yield return new WaitForSeconds(2);
         attackScript.Shoot();
     }
+
+    void Damage()
+    {
+        hp -= 1;
+        if(hp == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        //animation de mort
+        print("destroyed");
+    }
 }

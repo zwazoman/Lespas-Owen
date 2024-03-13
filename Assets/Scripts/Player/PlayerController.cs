@@ -13,6 +13,7 @@ public class Playercontroller : MonoBehaviour
     Rigidbody2D rb;
     float moveSpeed;
     float rateOfFire;
+    int hp;
     [SerializeField] CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
@@ -30,6 +31,7 @@ public class Playercontroller : MonoBehaviour
         attackscript.bullet = infos.bullet;
         rateOfFire = infos.rateOfFire;
         attackscript.rateOfFire = rateOfFire;
+        hp = infos.hp;
     }
 
     public void OnShoot(InputAction.CallbackContext value)
@@ -94,5 +96,22 @@ public class Playercontroller : MonoBehaviour
         canShoot = false;
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;       
+    }
+
+    public void Damage()
+    {
+        hp -= 1;
+        print(hp);
+        if(hp == 0)
+        {
+            Death();
+        }
+    }
+
+    private void Death()
+    {
+        print("t'es mort");
+        //panel mort
+        Destroy(gameObject);
     }
 }

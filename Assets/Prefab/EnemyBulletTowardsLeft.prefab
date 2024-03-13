@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2238680483833448138}
   - component: {fileID: 2852430114144293974}
   - component: {fileID: 7791692984656051184}
+  - component: {fileID: 4771897116397504768}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -114,7 +115,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -142,6 +143,18 @@ PolygonCollider2D:
       - {x: 0.025350593, y: 0.015289188}
       - {x: 0.015303762, y: 0.015303755}
   m_UseDelaunayMesh: 0
+--- !u!114 &4771897116397504768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173608961197261469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3a61cfe02514d4e8070aded7a236a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7502896682663092760
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,9 +165,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4844699442861286617}
   - component: {fileID: 8109532118297593794}
+  - component: {fileID: -1515599920057681608}
   - component: {fileID: 537030288203949088}
   m_Layer: 8
-  m_Name: EnemyBulletTowardsBottom
+  m_Name: EnemyBulletTowardsLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,6 +203,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileClass: {fileID: 11400000, guid: 86987d719045c494c8ca22b18646f548, type: 2}
+--- !u!114 &-1515599920057681608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502896682663092760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a3a61cfe02514d4e8070aded7a236a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &537030288203949088
 Animator:
   serializedVersion: 5

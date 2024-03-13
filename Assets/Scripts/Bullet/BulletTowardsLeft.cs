@@ -9,7 +9,7 @@ public class BulletTowardsLeft : MonoBehaviour
     private ProjectileClass projectileClass;
     private float projectileSpeed;
     private float despawnTime;
-
+    
 
     private void Awake()
     {
