@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BulletTowardsLeft : MonoBehaviour
+public class BulletEnnemyStraight : MonoBehaviour
 {
     [SerializeField] 
     private ProjectileClass projectileClass;
