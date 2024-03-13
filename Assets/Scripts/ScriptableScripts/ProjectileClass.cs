@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Projectile", menuName = "Projectiles")]
 public class ProjectileClass : ScriptableObject
 {
+    [field: SerializeField]
+    public float speed { get; private set; }
     [SerializeField]
-    internal float speed;
-    [SerializeField]
-    internal int despawnTime;
+    public float despawnTime { get; private set; }
 }

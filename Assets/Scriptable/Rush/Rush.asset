@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff4c93eec44c68438a4f766c57a4f8d, type: 3}
   m_Name: Rush
   m_EditorClassIdentifier: 
-  <speed>k__BackingField: 0
+  <speed>k__BackingField: 10
+  <rateOfFire>k__BackingField: 2
+  <hp>k__BackingField: 0
   <bullet>k__BackingField: {fileID: 0}
