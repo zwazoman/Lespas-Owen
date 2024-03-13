@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: EnemyBulletTowardsPlayer
   m_EditorClassIdentifier: 
   speed: 9
-  despawnTime: 5
+  despawnTime: 3

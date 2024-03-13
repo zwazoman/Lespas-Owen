@@ -10,12 +10,11 @@ public class AssaultAttack : Attack
 
     public override void Shoot()
     {
-        StartCoroutine(AssaultShoot());
+        AssaultShoot();
     }
-    IEnumerator AssaultShoot()
+    void AssaultShoot()
     {
         Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(rateOfFire);
         Instantiate(bullet, shootZone2.transform.position, Quaternion.identity);
     }
 }

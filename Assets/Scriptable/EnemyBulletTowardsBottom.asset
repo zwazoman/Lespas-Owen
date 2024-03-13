@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94abd82e52f59d94b943e285fe9cf748, type: 3}
   m_Name: EnemyBulletTowardsBottom
   m_EditorClassIdentifier: 
-  speed: 0
-  despawnTime: 0
+  speed: 9
+  despawnTime: 3

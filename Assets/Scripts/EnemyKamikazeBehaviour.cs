@@ -8,7 +8,7 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
     Rigidbody2D rb;
     float speed;
     int hp;
-    Vector2 playerPosition = Playercontroller.instance.transform.position;
+    Vector2 playerPosition;
     Vector2 towardsPlayer;
 
     private void Awake()
@@ -21,6 +21,7 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
 
     private void Update()
     {
+        playerPosition = Playercontroller.instance.transform.position;
         towardsPlayer = new Vector2(playerPosition.x - transform.position.x, playerPosition.y - transform.position.y);
         transform.Translate(towardsPlayer.normalized * speed * Time.deltaTime);
     }
