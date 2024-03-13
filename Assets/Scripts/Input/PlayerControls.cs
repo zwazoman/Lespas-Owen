@@ -178,34 +178,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
-        },
-        {
-            ""name"": ""UI"",
-            ""id"": ""3a74dd2f-f88b-4972-9d07-2d958d698a6b"",
-            ""actions"": [
-                {
-                    ""name"": ""select"",
-                    ""type"": ""Button"",
-                    ""id"": ""8d8deea1-c84c-42c9-9bfe-1a73eba218fa"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
-                {
-                    ""name"": """",
-                    ""id"": ""f625ad24-195d-4b14-86b9-f7e6ba4b0318"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""select"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                }
-            ]
         }
     ],
     ""controlSchemes"": [
@@ -238,9 +210,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_BasicFly_Shoot = m_BasicFly.FindAction("Shoot", throwIfNotFound: true);
         m_BasicFly_Special = m_BasicFly.FindAction("Special", throwIfNotFound: true);
         m_BasicFly_Move = m_BasicFly.FindAction("Move", throwIfNotFound: true);
-        // UI
-        m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
-        m_UI_select = m_UI.FindAction("select", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -360,52 +329,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         }
     }
     public BasicFlyActions @BasicFly => new BasicFlyActions(this);
-
-    // UI
-    private readonly InputActionMap m_UI;
-    private List<IUIActions> m_UIActionsCallbackInterfaces = new List<IUIActions>();
-    private readonly InputAction m_UI_select;
-    public struct UIActions
-    {
-        private @PlayerControls m_Wrapper;
-        public UIActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @select => m_Wrapper.m_UI_select;
-        public InputActionMap Get() { return m_Wrapper.m_UI; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(UIActions set) { return set.Get(); }
-        public void AddCallbacks(IUIActions instance)
-        {
-            if (instance == null || m_Wrapper.m_UIActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_UIActionsCallbackInterfaces.Add(instance);
-            @select.started += instance.OnSelect;
-            @select.performed += instance.OnSelect;
-            @select.canceled += instance.OnSelect;
-        }
-
-        private void UnregisterCallbacks(IUIActions instance)
-        {
-            @select.started -= instance.OnSelect;
-            @select.performed -= instance.OnSelect;
-            @select.canceled -= instance.OnSelect;
-        }
-
-        public void RemoveCallbacks(IUIActions instance)
-        {
-            if (m_Wrapper.m_UIActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(IUIActions instance)
-        {
-            foreach (var item in m_Wrapper.m_UIActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_UIActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public UIActions @UI => new UIActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -429,9 +352,5 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnSpecial(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
-    }
-    public interface IUIActions
-    {
-        void OnSelect(InputAction.CallbackContext context);
     }
 }

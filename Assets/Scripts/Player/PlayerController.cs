@@ -67,7 +67,7 @@ public class Playercontroller : MonoBehaviour
         mouvement.y += orientation.y;
         mouvement.z = 0;
         mouvement.Normalize();
-        animator.SetFloat("VelocityR",mouvement.x);
+        animator.SetFloat("VelocityR",mouvement.y);
 
     }
 
