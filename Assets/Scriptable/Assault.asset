@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Assault
   m_EditorClassIdentifier: 
   <speed>k__BackingField: 8
+  <rateOfFire>k__BackingField: 0.2
   <bullet>k__BackingField: {fileID: 3053069238252734403, guid: 5c9760825ff87d54cba98f3359252fca, type: 3}
