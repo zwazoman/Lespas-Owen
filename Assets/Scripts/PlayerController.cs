@@ -65,7 +65,7 @@ public class Playercontroller : MonoBehaviour
         mouvement.y += orientation.y;
         mouvement.z = 0;
         mouvement.Normalize();
-        Debug.Log(InputValue.x);
+        animator.SetFloat("VelocityR",mouvement.x);
 
     }
 
@@ -84,7 +84,6 @@ public class Playercontroller : MonoBehaviour
             if (canShoot == true) 
             { 
             attackscript.Shoot();
-            print("ntm");
             StartCoroutine(ShootManager());
             }
         }
@@ -93,7 +92,6 @@ public class Playercontroller : MonoBehaviour
     IEnumerator ShootManager()
     {
         canShoot = false;
-
         yield return new WaitForSeconds(rateOfFire);
         canShoot = true;       
     }
