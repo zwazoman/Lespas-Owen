@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2005012761441010580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ShootZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 6127527023201143041}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.081, y: 0.005, z: 0.027858393}
+  m_LocalPosition: {x: 0.081, y: 0.005, z: 0}
   m_LocalScale: {x: 0.25575447, y: 0.25575447, z: 0.25575447}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4943979553773193070}
   - component: {fileID: 2828896203869947399}
   - component: {fileID: 6806478271484893387}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4943979553773193070
 MonoBehaviour:
   m_ObjectHideFlags: 0

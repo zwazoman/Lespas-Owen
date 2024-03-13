@@ -12,5 +12,8 @@ public class EnemyClass : ScriptableObject
     public int hp { get; private set; }
 
     [field: SerializeField]
+    public float rateOfFire { get; private set; }
+
+    [field: SerializeField]
     public GameObject bullet { get; private set; }
 }

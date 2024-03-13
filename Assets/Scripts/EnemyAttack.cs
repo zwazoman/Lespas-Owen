@@ -12,8 +12,8 @@ public class EnemyAttack : Attack
 
     IEnumerator EnemyShoot()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(rateOfFire);
         Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
-        EnemyShoot();
+        StartCoroutine(EnemyShoot());
     }
 }

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <speed>k__BackingField: 50
   <hp>k__BackingField: 1
+  <rateOfFire>k__BackingField: 3
+  <bullet>k__BackingField: {fileID: 7502896682663092760, guid: 45c4785b718bae049a5f27a344fbe9a3, type: 3}

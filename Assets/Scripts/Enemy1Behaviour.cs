@@ -8,6 +8,7 @@ public class Enemy1Behaviour : MonoBehaviour
     [SerializeField] Attack attackScript;
     Rigidbody2D rb;
     float speed;
+    float rateOfFire;
     int hp;
 
     private void Awake()
@@ -15,7 +16,9 @@ public class Enemy1Behaviour : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         speed = infos.speed;
         hp = infos.hp;
+        rateOfFire = infos.rateOfFire;
         attackScript.bullet = infos.bullet;
+        attackScript.rateOfFire = rateOfFire;
     }
 
     private void Start()

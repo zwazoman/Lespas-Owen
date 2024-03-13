@@ -8,11 +8,5 @@ public class ProjectileClass : ScriptableObject
     [SerializeField]
     internal float speed;
     [SerializeField]
-    internal float scale;
-    [SerializeField]
-    internal int damages;
-    [SerializeField]
-    internal int timeToScreen;
-    [SerializeField]
-    internal Vector2 shootDirection;
+    internal int despawnTime;
 }
