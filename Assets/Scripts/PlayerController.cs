@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.InputSystem.InputAction;
 
 public class Playercontroller : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
+    private Vector3 mouvement;
+    internal Vector2 InputValue;
+    private bool isStickUse = false;
     private void Awake()
     {
         instance = this;
@@ -25,8 +29,8 @@ public class Playercontroller : MonoBehaviour
         rateOfFire = infos.rateOfFire;
         attackscript.rateOfFire = rateOfFire;
     }
-    
-    private void OnShoot()
+
+    public void OnShoot(InputAction.CallbackContext value)
     {
         attackscript.Shoot();
     }
@@ -36,10 +40,33 @@ public class Playercontroller : MonoBehaviour
 
     }
 
-    private void OnMove(InputValue inputValue)
+    public void OnMove(InputAction.CallbackContext callbackContext)
     {
-        rb.velocity = inputValue.Get<Vector2>() * moveSpeed;
-        print("move");
-        animator.SetFloat("VelocityR", rb.velocity.x);
+        if (callbackContext.started)
+        {
+            isStickUse = true;
+        }
+        if (callbackContext.canceled)
+        {
+            isStickUse = false;
+        }
+        Vector2 orientation = callbackContext.ReadValue<Vector2>();
+        mouvement = new Vector3(InputValue.x, 0, InputValue.y);
+        mouvement.x += orientation.x;
+        mouvement.y += orientation.y;
+        mouvement.z = 0;
+        mouvement.Normalize();
+        Debug.Log(InputValue.x);
+
     }
+
+    private void FixedUpdate()
+    {
+        if (isStickUse)
+        {
+            transform.position = transform.position + (moveSpeed * mouvement * Time.deltaTime);
+        }
+    }
+
+
 }
