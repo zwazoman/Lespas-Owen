@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy1Behaviour : MonoBehaviour
+public class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] EnemyClass infos;
     [SerializeField] Attack attackScript;
@@ -21,9 +21,10 @@ public class Enemy1Behaviour : MonoBehaviour
         attackScript.rateOfFire = rateOfFire;
     }
 
-    private void Start()
+     IEnumerator Start()
     {
         rb.velocity = Vector2.down * speed * Time.deltaTime;
+        yield return new WaitForSeconds(2);
         attackScript.Shoot();
     }
 }
