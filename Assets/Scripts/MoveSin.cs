@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class MoveSin : MonoBehaviour
 {
-    float sinCenterX;
+    float sinCenterY;
     [SerializeField] float amplitude;
     [SerializeField] float frequency;
     void Start()
     {
-        sinCenterX = transform.position.x;
+        sinCenterY = transform.position.y;
         int direction = Random.Range(0, 2);
         if (direction == 0)
         {
@@ -21,8 +21,8 @@ public class MoveSin : MonoBehaviour
     {
         Vector2 pos = transform.position;
 
-        float sin = Mathf.Sin(pos.y * frequency) * amplitude;
-        pos.x = sinCenterX + sin;
+        float sin = Mathf.Sin(pos.x * frequency) * amplitude;
+        pos.y = sinCenterY + sin;
 
         transform.position = pos;
     }
