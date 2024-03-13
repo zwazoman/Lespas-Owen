@@ -19,6 +19,8 @@ public class Playercontroller : MonoBehaviour
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
+    private bool spaceHold = false;
+    private bool canShoot = true;
     private void Awake()
     {
         instance = this;
@@ -32,8 +34,14 @@ public class Playercontroller : MonoBehaviour
 
     public void OnShoot(InputAction.CallbackContext value)
     {
-        attackscript.Shoot();
-        print("ntm");
+        if(value.performed)
+        {
+            spaceHold = true; 
+        }
+        else if (value.canceled)
+        {
+            spaceHold = false;
+        }
     }
 
     private void OnSpecial()
@@ -69,5 +77,24 @@ public class Playercontroller : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (spaceHold)
+        {
+            if (canShoot == true) 
+            { 
+            attackscript.Shoot();
+            print("ntm");
+            StartCoroutine(ShootManager());
+            }
+        }
+    }
+    
+    IEnumerator ShootManager()
+    {
+        canShoot = false;
 
+        yield return new WaitForSeconds(rateOfFire);
+        canShoot = true;       
+    }
 }
