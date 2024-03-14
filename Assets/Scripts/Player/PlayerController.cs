@@ -22,6 +22,7 @@ public class Playercontroller : MonoBehaviour
     private bool isStickUse = false;
     private bool spaceHold = false;
     private bool canShoot = true;
+    [SerializeField] private GameObject super;
     private void Awake()
     {
         instance = this;
@@ -46,9 +47,11 @@ public class Playercontroller : MonoBehaviour
         }
     }
 
-    private void OnSpecial()
+    public void OnSpecial(InputAction.CallbackContext callback)
     {
-
+       // Instantiate(super);
+        Debug.Log("feur");
+        Destroy(GameObject.FindWithTag("Bullet"));
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
