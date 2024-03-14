@@ -5,6 +5,7 @@ using static UnityEditor.PlayerSettings;
 
 public class SuperSteroid : MonoBehaviour
 {
+    [SerializeField] 
     public void StartSteroid()
     {
         StartCoroutine(StartSuper());
