@@ -19,5 +19,8 @@ public class CharacterClass : ScriptableObject
 
     [field: SerializeField]
     public GameObject bullet { get; private set; }
+
+    [field: SerializeField]
+    public GameObject specialBullet { get; private set; }
 }
 

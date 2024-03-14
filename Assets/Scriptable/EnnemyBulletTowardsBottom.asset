@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3dd455ab2e074a47a2ace3d0d7eb88a, type: 3}
-  m_Name: Kamikaze
+  m_Script: {fileID: 11500000, guid: 94abd82e52f59d94b943e285fe9cf748, type: 3}
+  m_Name: EnnemyBulletTowardsBottom
   m_EditorClassIdentifier: 
-  <speed>k__BackingField: 6
-  <hp>k__BackingField: 1
-  <rateOfFire>k__BackingField: 0
-  <bullet>k__BackingField: {fileID: 0}
+  <speed>k__BackingField: 7
+  <despawnTime>k__BackingField: 3
+  <damages>k__BackingField: 1
+  <direction>k__BackingField: {x: 0, y: -1}

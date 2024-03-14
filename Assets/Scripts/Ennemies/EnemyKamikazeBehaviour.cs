@@ -19,7 +19,7 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
 
     private void Update()
     {
-        playerPosition = Playercontroller.instance.transform.position;
+        playerPosition = PlayerController.instance.transform.position;
         transform.position = Vector2.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
         transform.up = -(playerPosition - transform.position);
     }

@@ -21,7 +21,7 @@ public class MoveSin : MonoBehaviour
     {
         Vector2 pos = transform.position;
 
-        float sin = Mathf.Sin(pos.x * frequency) * amplitude;
+        float sin = Mathf.Sin(Time.time * frequency) * amplitude;
         pos.y = sinCenterY + sin;
 
         transform.position = pos;
