@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 using TMPro;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject explosion;
     [SerializeField] TMP_Text hpText;
     [SerializeField] TMP_Text cdText;
+    [SerializeField] GameObject panelDeath;
+    [SerializeField] GameObject switchMenu;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -130,6 +133,8 @@ public class PlayerController : MonoBehaviour
         {
             Explode();
             Destroy(gameObject);
+            panelDeath.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(switchMenu);
         }
     }
     private void Explode()
