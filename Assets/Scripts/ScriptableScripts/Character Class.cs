@@ -15,6 +15,9 @@ public class CharacterClass : ScriptableObject
     public int hp { get; private set; }
 
     [field: SerializeField]
+    public float cooldown { get; private set; }
+
+    [field: SerializeField]
     public GameObject bullet { get; private set; }
 }
 

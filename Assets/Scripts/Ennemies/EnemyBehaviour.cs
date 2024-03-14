@@ -23,7 +23,7 @@ public class EnemyBehaviour : MonoBehaviour
 
      IEnumerator Start()
     {
-        rb.velocity = Vector2.left * speed * Time.deltaTime;
+        rb.velocity = Vector2.left * 10 * speed * Time.deltaTime;
         yield return new WaitForSeconds(2);
         attackScript.Shoot();
     }

@@ -9,7 +9,6 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
     float speed;
     int hp;
     Vector3 playerPosition;
-    //Vector2 towardsPlayer;
 
     private void Awake()
     {
@@ -21,8 +20,6 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
     private void Update()
     {
         playerPosition = Playercontroller.instance.transform.position;
-        //towardsPlayer = new Vector2(playerPosition.x - transform.position.x, playerPosition.y - transform.position.y);
-        //transform.Translate(towardsPlayer.normalized * speed * Time.deltaTime);
         transform.position = Vector2.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
         transform.up = -(playerPosition - transform.position);
     }
