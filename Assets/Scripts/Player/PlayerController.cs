@@ -98,11 +98,11 @@ public class Playercontroller : MonoBehaviour
         canShoot = true;       
     }
 
-    public void Damage()
+    public void ApplyDamage(int damages)
     {
-        hp -= 1;
+        hp -= damages;
         print(hp);
-        if(hp == 0)
+        if(hp <= 0)
         {
             Death();
         }

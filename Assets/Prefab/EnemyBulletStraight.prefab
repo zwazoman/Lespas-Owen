@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3a61cfe02514d4e8070aded7a236a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infos: {fileID: 11400000, guid: 86987d719045c494c8ca22b18646f548, type: 2}
 --- !u!1 &7502896682663092760
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,8 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4844699442861286617}
-  - component: {fileID: 8109532118297593794}
-  - component: {fileID: -1515599920057681608}
+  - component: {fileID: 8304235535368211337}
   - component: {fileID: 537030288203949088}
   m_Layer: 8
   m_Name: EnemyBulletStraight
@@ -190,7 +190,7 @@ Transform:
   - {fileID: 2238680483833448138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8109532118297593794
+--- !u!114 &8304235535368211337
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,22 +199,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7502896682663092760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3634bb2c244b59448ae04781973977a, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d1fddf135de3564a8f33d8346a53298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileClass: {fileID: 11400000, guid: 86987d719045c494c8ca22b18646f548, type: 2}
---- !u!114 &-1515599920057681608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502896682663092760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3a61cfe02514d4e8070aded7a236a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  infos: {fileID: 11400000, guid: 86987d719045c494c8ca22b18646f548, type: 2}
 --- !u!95 &537030288203949088
 Animator:
   serializedVersion: 5

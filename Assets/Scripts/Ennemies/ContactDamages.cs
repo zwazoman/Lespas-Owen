@@ -8,9 +8,7 @@ public class ContactDamages : MonoBehaviour
     {
         if(collision.gameObject.layer == 6)
         {
-            collision.gameObject.SendMessage("Damage");
-            collision.gameObject.SendMessage("Damage");
-            collision.gameObject.SendMessage("Damage");
+            collision.gameObject.SendMessage("ApplyDamage",3);
             Destroy(gameObject);
         }
     }

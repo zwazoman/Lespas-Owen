@@ -27,8 +27,9 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
         transform.up = -(playerPosition - transform.position);
     }
 
-    void Damage()
+    public void ApplyDamage(int damages)
     {
+        print(damages);
         Destroy(gameObject);
     }
 

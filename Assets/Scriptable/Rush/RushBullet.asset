@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <speed>k__BackingField: 8
   <despawnTime>k__BackingField: 0.5
+  <damages>k__BackingField: 3
+  <direction>k__BackingField: {x: 1, y: 0}

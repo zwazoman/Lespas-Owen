@@ -10,4 +10,10 @@ public class ProjectileClass : ScriptableObject
 
     [field: SerializeField]
     public float despawnTime { get; private set; }
+
+    [field: SerializeField]
+    public int damages { get;private set; }
+
+    [field: SerializeField]
+    public Vector2 direction { get; private set;}
 }
