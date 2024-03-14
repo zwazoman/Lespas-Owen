@@ -28,10 +28,10 @@ public class EnemyBehaviour : MonoBehaviour
         attackScript.Shoot();
     }
 
-    void Damage()
+    public void ApplyDamage(int damages)
     {
-        hp -= 1;
-        if(hp == 0)
+        hp -= damages;
+        if(hp <= 0)
         {
             Destroy(gameObject);
         }

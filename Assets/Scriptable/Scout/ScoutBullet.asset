@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94abd82e52f59d94b943e285fe9cf748, type: 3}
   m_Name: ScoutBullet
   m_EditorClassIdentifier: 
-  speed: 0
-  scale: 0
-  damages: 0
+  <speed>k__BackingField: 15
+  <despawnTime>k__BackingField: 3
+  <damages>k__BackingField: 3
+  <direction>k__BackingField: {x: 1, y: 0}

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7898238054645832036}
   - component: {fileID: 3667311763124860461}
   m_Layer: 6
-  m_Name: AssaultShip
+  m_Name: ScoutShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23e5daa9ab87154ab62d3c7676eeadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
+  infos: {fileID: 11400000, guid: a78b93d63e7e5b24aba0b038e1b2e0a3, type: 2}
   attackscript: {fileID: 266055290747296144}
   animator: {fileID: 3667311763124860461}
 --- !u!114 &266055290747296144
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006074995, y: 0.4860003}
+  m_Offset: {x: 0.0037260316, y: 0.7702321}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.41679937, y: 0.28314924}
+  m_Size: {x: 0.21797696, y: 0.3979621}
   m_EdgeRadius: 0
 --- !u!50 &266287201213493503
 Rigidbody2D:
@@ -251,7 +251,7 @@ Transform:
   m_GameObject: {fileID: 5235448668373194021}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.65, z: 0}
+  m_LocalPosition: {x: -0, y: 1.032, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -284,7 +284,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.050707, y: 6.050707, z: 6.050707}
+  m_LocalScale: {x: 3.4791563, y: 9.605497, z: 6.050707}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4332994103807928234}
@@ -331,7 +331,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: -47539048, guid: 4570e1597f84f5048899aca162e3e87a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9716981, g: 0.92501867, b: 0.1512549, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
