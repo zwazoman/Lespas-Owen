@@ -5,7 +5,7 @@ using static UnityEditor.PlayerSettings;
 
 public class SuperSteroid : MonoBehaviour
 {
-    [SerializeField] 
+   /* 
     public void StartSteroid()
     {
         StartCoroutine(StartSuper());
@@ -15,5 +15,5 @@ public class SuperSteroid : MonoBehaviour
         rateOfFire /= 2;
         yield return new WaitForSeconds(5);
         rateOfFire = infos.rateOfFire;
-    }
+    }*/
 }
