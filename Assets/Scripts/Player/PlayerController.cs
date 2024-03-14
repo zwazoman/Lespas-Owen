@@ -49,9 +49,9 @@ public class Playercontroller : MonoBehaviour
 
     public void OnSpecial(InputAction.CallbackContext callback)
     {
-       // Instantiate(super);
+        Instantiate(super);
         Debug.Log("feur");
-        Destroy(GameObject.FindWithTag("Bullet"));
+        //Destroy(GameObject.FindWithTag("Bullet"));
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
