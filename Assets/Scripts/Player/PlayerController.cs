@@ -49,9 +49,9 @@ public class Playercontroller : MonoBehaviour
 
     public void OnSpecial(InputAction.CallbackContext callback)
     {
-        Instantiate(super);
+        StartCoroutine(SteroidSuper());
         Debug.Log("feur");
-        //Destroy(GameObject.FindWithTag("Bullet"));
+        
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
@@ -116,5 +116,12 @@ public class Playercontroller : MonoBehaviour
         print("t'es mort");
         //panel mort
         Destroy(gameObject);
+    }
+
+    IEnumerator SteroidSuper()
+    {
+        rateOfFire /= 2;
+        yield return new WaitForSeconds(5);
+        rateOfFire = infos.rateOfFire;
     }
 }
