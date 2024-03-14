@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5455367451908060874}
   - component: {fileID: 3766319899807116647}
+  - component: {fileID: 6624057116850040230}
   m_Layer: 8
   m_Name: ScoutBullet
   m_TagString: Bullet
@@ -46,6 +47,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 462ee5ef4a17ebb45a12df54799b2e09, type: 2}
+--- !u!95 &6624057116850040230
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843786184122494149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74297510493dda14cbfbe3be4c4924d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6443246425285022652
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,6 +80,7 @@ GameObject:
   - component: {fileID: 4987413461318842614}
   - component: {fileID: 2445926911873478905}
   - component: {fileID: 3662335279702519194}
+  - component: {fileID: 7771152771427754818}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -197,3 +220,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 462ee5ef4a17ebb45a12df54799b2e09, type: 2}
+--- !u!95 &7771152771427754818
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443246425285022652}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74297510493dda14cbfbe3be4c4924d2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

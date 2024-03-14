@@ -54,6 +54,7 @@ MonoBehaviour:
   infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
   attackscript: {fileID: 266055290747296144}
   animator: {fileID: 3667311763124860461}
+  super: {fileID: 0}
 --- !u!114 &266055290747296144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +182,19 @@ MonoBehaviour:
     m_ActionId: 925fc3bd-4416-4c43-b8be-76f5b0de0703
     m_ActionName: BasicFly/Shoot[/Keyboard/space,/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1411800993761083178}
+        m_TargetAssemblyTypeName: Playercontroller, Assembly-CSharp
+        m_MethodName: OnSpecial
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 70f139dd-15b5-435d-b022-ba863bcc6cfe
     m_ActionName: BasicFly/Special[/Keyboard/q]
   - m_PersistentCalls:

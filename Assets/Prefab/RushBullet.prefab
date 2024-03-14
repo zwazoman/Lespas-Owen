@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5455367451908060874}
   - component: {fileID: 3766319899807116647}
+  - component: {fileID: 1249426275735733213}
   m_Layer: 8
   m_Name: RushBullet
   m_TagString: Bullet
@@ -46,6 +47,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 0e1f269ecf73d454e9e70f8db070830d, type: 2}
+--- !u!95 &1249426275735733213
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843786184122494149}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fe7c36ec57249b449ee2fcf708ecda7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6443246425285022652
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,6 +80,7 @@ GameObject:
   - component: {fileID: 4987413461318842614}
   - component: {fileID: 2445926911873478905}
   - component: {fileID: 3662335279702519194}
+  - component: {fileID: 7905302496983852666}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -197,3 +220,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 0e1f269ecf73d454e9e70f8db070830d, type: 2}
+--- !u!95 &7905302496983852666
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6443246425285022652}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fe7c36ec57249b449ee2fcf708ecda7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
