@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: -3757572174980809203}
   - component: {fileID: 3486715175953104396}
   m_Layer: 7
-  m_Name: Enemy2Variant
+  m_Name: Enemy2Variant1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dbffab419d5a244587c2a575dc99793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infos: {fileID: 11400000, guid: 8cd0b3755c815f941abfbaff2aa90d93, type: 2}
+  infos: {fileID: 11400000, guid: 2f4e1eeec9b14dd48ba5f48e8ab8700f, type: 2}
   attackScript: {fileID: 4417940613403076911}
 --- !u!114 &4417940613403076911
 MonoBehaviour:

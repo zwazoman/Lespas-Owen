@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour
 {
-
+    [SerializeField] GameObject enemySpawner;
     [SerializeField]
-    List<GameObject> WaveEnemyList = new List<GameObject>();
+    List<GameObject> waveEnemyList = new List<GameObject>();
     [SerializeField] float minWaveSpawnTime;
     [SerializeField] float maxWaveSpawnTime;
+    [SerializeField] float firstWaveSpawnTime;
+
     Vector2 spawnPoint;
-    float ySpawn = 10;
+    float ySpawn = 0;
 
     private void Start()
     {
@@ -19,20 +21,24 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator WaveSpawn()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(firstWaveSpawnTime);
         while (Playercontroller.instance != null)
         {
-            GameObject randomEnemy = WaveEnemyList[Random.Range(0, WaveEnemyList.Count)];
-            if(randomEnemy == WaveEnemyList[1])
+            enemySpawner.SetActive(false);
+            int randomIndex = Random.Range(0, waveEnemyList.Count);
+            GameObject randomEnemy = waveEnemyList[randomIndex];
+            switch (randomIndex)
             {
-                spawnPoint = new Vector2(ySpawn,0);
-            }
-            else
-            {
-                spawnPoint = new Vector2(ySpawn, Random.Range(-4.2f, 4.2f));
+                case 1:
+                    spawnPoint = new Vector2(9.2f,ySpawn);
+                    break;
+                default:
+                    spawnPoint = new Vector2(10, ySpawn);
+                    break;
             }
             float timeBetweenEnemySpawn = Random.Range(minWaveSpawnTime, maxWaveSpawnTime);
-            GameObject.Instantiate(randomEnemy,spawnPoint,Quaternion.Euler(new Vector3(0,0,-90)));
+            GameObject.Instantiate(randomEnemy,spawnPoint,Quaternion.identity);
+            enemySpawner.SetActive(true);
             yield return new WaitForSeconds(timeBetweenEnemySpawn);
         }
 
