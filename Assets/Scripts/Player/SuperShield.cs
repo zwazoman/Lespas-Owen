@@ -6,17 +6,16 @@ using static UnityEditor.PlayerSettings;
 public class SuperShield : Super
 {
     [SerializeField] GameObject shieldPrefab;
-    [SerializeField] GameObject shieldZone;
     GameObject shield;
     
     public override void StartSuper()
     {
-        StartCoroutine(StartShield());
+        StartShield();
     }
-    IEnumerator StartShield()
+    void StartShield()
     {
+        print("chien");
         shield = Instantiate(shieldPrefab, transform);
-        yield return new WaitForSeconds(superDuration);
-        Destroy(shield);
+        Destroy(shield,superDuration) ;
     }
 }

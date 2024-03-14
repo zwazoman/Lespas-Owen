@@ -30,4 +30,5 @@ public class BulletStraight : MonoBehaviour
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
     }
+
 }

@@ -383,7 +383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &481954489
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -10668,7 +10668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369e2e97c134fcd41b6b4a5df44604e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2044736695
+--- !u!1001 &2003400241
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10678,7 +10678,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2212913312023808756, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_Name
-      value: ScoutShip
+      value: ScoutShip (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2212913312023808756, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_IsActive
@@ -10686,11 +10686,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.65
+      value: -3.7676544
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.168
+      value: 2.4708886
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10741,5 +10741,5 @@ SceneRoots:
   - {fileID: 1969442722}
   - {fileID: 1376845181}
   - {fileID: 143507734}
-  - {fileID: 2044736695}
   - {fileID: 551424534}
+  - {fileID: 2003400241}

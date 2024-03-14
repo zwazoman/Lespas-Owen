@@ -12,7 +12,7 @@ public class PlayerAttack : Attack
     public override void Shoot()
     {
         Instantiate(controller.bullet, shootZone.transform.position, Quaternion.identity);
-
+        print("suuuu");
     }
 
 }

@@ -52,11 +52,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23e5daa9ab87154ab62d3c7676eeadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 0}
   infos: {fileID: 11400000, guid: d97c7e885fce96e47aae2b458d7bec1f, type: 2}
   attackscript: {fileID: 3197584413838369717}
   animator: {fileID: 3667311763124860461}
   super: {fileID: -5732596060770719995}
   explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
+  hpText: {fileID: 0}
+  cdText: {fileID: 0}
+  panelDeath: {fileID: 0}
+  switchMenu: {fileID: 0}
 --- !u!114 &3197584413838369717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +91,6 @@ MonoBehaviour:
   controller: {fileID: 1411800993761083178}
   superDuration: 10
   shieldPrefab: {fileID: 2210018296552856983, guid: 269a7d40e843c1741b652ccc08dccffc, type: 3}
-  shieldZone: {fileID: 0}
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -299,7 +303,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1498534642910076565}
   - component: {fileID: 4258220464499870601}
-  m_Layer: 6
+  - component: {fileID: 7545942168552708995}
+  m_Layer: 9
   m_Name: ship_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,3 +378,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7545942168552708995
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914100075821161115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 448
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.24}
+    newSize: {x: 0.16, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.24}
+  m_EdgeRadius: 0

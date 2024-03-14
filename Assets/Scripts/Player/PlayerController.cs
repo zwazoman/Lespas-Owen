@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     internal GameObject bullet;
     float cooldown;
     bool hasSpecial = true;
+    [SerializeField] Collider2D coll;
     [SerializeField] internal CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
         hp = infos.hp;
         cooldown = infos.cooldown;
         bullet = infos.bullet;
+        coll = GetComponent<Collider2D>();
     }
 
     public void OnShoot(InputAction.CallbackContext value)
@@ -109,8 +111,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        hpText.text = hp.ToString();
-        cdText.text = cooldown.ToString();
+        //hpText.text = hp.ToString();
+        //cdText.text = cooldown.ToString();
     }
     
     IEnumerator ShootManager()
@@ -125,6 +127,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(cooldown);
         hasSpecial = true;
     }
+
     public void ApplyDamage(int damages)
     {
         hp -= damages;
@@ -136,6 +139,21 @@ public class PlayerController : MonoBehaviour
             panelDeath.SetActive(true);
             EventSystem.current.SetSelectedGameObject(switchMenu);
         }
+        StartCoroutine(HitStop());
+        StartCoroutine(InvincibilityFrames());
+    }
+
+    IEnumerator HitStop()
+    {
+        Time.timeScale = 0;
+        yield return new WaitForSecondsRealtime(0.3f);
+        Time.timeScale = 1;
+    }
+    IEnumerator InvincibilityFrames()
+    {
+        coll.enabled = false;
+        yield return new WaitForSeconds(1);
+        coll.enabled = true;
     }
     private void Explode()
     {

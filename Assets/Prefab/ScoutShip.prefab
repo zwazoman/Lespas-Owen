@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4332994103807928234}
   - component: {fileID: 1411800993761083178}
   - component: {fileID: 266055290747296144}
+  - component: {fileID: 4382973770842238268}
   - component: {fileID: 2677273714475130235}
   - component: {fileID: 266287201213493503}
   - component: {fileID: 7898238054645832036}
@@ -51,11 +52,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23e5daa9ab87154ab62d3c7676eeadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 0}
   infos: {fileID: 11400000, guid: a78b93d63e7e5b24aba0b038e1b2e0a3, type: 2}
   attackscript: {fileID: 266055290747296144}
   animator: {fileID: 3667311763124860461}
-  super: {fileID: 0}
+  super: {fileID: 4382973770842238268}
   explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
+  hpText: {fileID: 0}
+  cdText: {fileID: 0}
+  panelDeath: {fileID: 0}
+  switchMenu: {fileID: 0}
 --- !u!114 &266055290747296144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +76,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootZone: {fileID: 5235448668373194021}
   controller: {fileID: 1411800993761083178}
+--- !u!114 &4382973770842238268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212913312023808756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f67260a823dc6f45b5dd8b820c60824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1411800993761083178}
+  superDuration: 1
+  explosionPrefab: {fileID: 5001941393490388547, guid: 9b2f4387197e2d846aa179a5f13b4d01, type: 3}
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -184,7 +205,19 @@ MonoBehaviour:
     m_ActionId: 925fc3bd-4416-4c43-b8be-76f5b0de0703
     m_ActionName: BasicFly/Shoot[/Keyboard/space,/Mouse/leftButton]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1411800993761083178}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnSpecial
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 70f139dd-15b5-435d-b022-ba863bcc6cfe
     m_ActionName: BasicFly/Special[/Keyboard/q]
   - m_PersistentCalls:
@@ -270,7 +303,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1498534642910076565}
   - component: {fileID: 4258220464499870601}
-  m_Layer: 6
+  - component: {fileID: 5817457951904638905}
+  m_Layer: 9
   m_Name: ship_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,3 +378,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &5817457951904638905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7914100075821161115}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 448
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.24}
+    newSize: {x: 0.16, y: 0.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.24}
+  m_EdgeRadius: 0
