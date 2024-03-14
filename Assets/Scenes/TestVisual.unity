@@ -1088,7 +1088,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.55
+  m_fontSize: 18
   m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2147,7 +2147,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2212913312023808756, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 2074604728}
   m_SourcePrefab: {fileID: 100100000, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
 --- !u!1 &2074604715 stripped
 GameObject:
@@ -2163,6 +2166,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a23e5daa9ab87154ab62d3c7676eeadb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2074604728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074604715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b363a0d55a12314eb18c0aa03e5386a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2080962697

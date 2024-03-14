@@ -17,6 +17,7 @@ public class Playercontroller : MonoBehaviour
     [SerializeField] CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
+    [SerializeField] SuperSteroid super1;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -49,7 +50,7 @@ public class Playercontroller : MonoBehaviour
 
     public void OnSpecial(InputAction.CallbackContext callback)
     {
-        StartCoroutine(SteroidSuper());
+        super1.StartSteroid();
         Debug.Log("feur");
         
     }
@@ -118,10 +119,4 @@ public class Playercontroller : MonoBehaviour
         Destroy(gameObject);
     }
 
-    IEnumerator SteroidSuper()
-    {
-        rateOfFire /= 2;
-        yield return new WaitForSeconds(5);
-        rateOfFire = infos.rateOfFire;
-    }
 }
