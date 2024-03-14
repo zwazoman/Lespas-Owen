@@ -156,6 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 86987d719045c494c8ca22b18646f548, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
 --- !u!1 &7502896682663092760
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 0b64bb3925ff3e0489b679d0292725e0, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
 --- !u!95 &537030288203949088
 Animator:
   serializedVersion: 5

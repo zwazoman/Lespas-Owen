@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyKamikazeBehaviour : MonoBehaviour
 {
     [SerializeField] EnemyClass infos;
+    [SerializeField] GameObject explosion;
     Rigidbody2D rb;
     float speed;
     int hp;
@@ -19,19 +20,23 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
 
     private void Update()
     {
-        playerPosition = PlayerController.instance.transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
-        transform.up = -(playerPosition - transform.position);
+        if (PlayerController.instance != null)
+        {
+            playerPosition = PlayerController.instance.transform.position;
+            transform.position = Vector2.MoveTowards(transform.position, playerPosition, speed * Time.deltaTime);
+            transform.up = -(playerPosition - transform.position);
+        }
     }
 
     public void ApplyDamage(int damages)
     {
         print(damages);
+        Explode();
         Destroy(gameObject);
     }
 
-    private void OnDestroy()
+    private void Explode()
     {
-        //animation explosion / vfx ?
+        Instantiate(explosion,transform.position,Quaternion.identity);
     }
 }

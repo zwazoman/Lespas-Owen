@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 0e1f269ecf73d454e9e70f8db070830d, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
 --- !u!95 &1249426275735733213
 Animator:
   serializedVersion: 5
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 0e1f269ecf73d454e9e70f8db070830d, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
 --- !u!95 &7905302496983852666
 Animator:
   serializedVersion: 5

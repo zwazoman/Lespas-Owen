@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
     [SerializeField] Super super;
+    [SerializeField] GameObject explosion;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -121,15 +122,12 @@ public class PlayerController : MonoBehaviour
         print(hp);
         if(hp <= 0)
         {
-            Death();
+            Explode();
+            Destroy(gameObject);
         }
     }
-
-    private void Death()
+    private void Explode()
     {
-        print("t'es mort");
-        //panel mort
-        Destroy(gameObject);
+        Instantiate(explosion,transform.position, Quaternion.identity);
     }
-
 }

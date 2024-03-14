@@ -55,6 +55,7 @@ MonoBehaviour:
   attackscript: {fileID: 266055290747296144}
   animator: {fileID: 3667311763124860461}
   super: {fileID: 0}
+  explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
 --- !u!114 &266055290747296144
 MonoBehaviour:
   m_ObjectHideFlags: 0

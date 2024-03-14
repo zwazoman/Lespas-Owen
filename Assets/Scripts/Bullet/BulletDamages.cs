@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletDamages : MonoBehaviour
 {
     [SerializeField] ProjectileClass infos;
+    [SerializeField] GameObject explosion;
     int damages;
 
     private void Awake()
@@ -17,10 +18,11 @@ public class BulletDamages : MonoBehaviour
         {
             collision.gameObject.SendMessage("ApplyDamage",damages);
         }
+        Explode();
         Destroy(gameObject);
     }
-    private void OnDestroy()
+    private void Explode()
     {
-        //animation d'explosion
+        Instantiate(explosion, transform.position, Quaternion.identity);
     }
 }

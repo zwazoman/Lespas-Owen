@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-    private void OnBecameInvisible()
+    /*private void OnBecameInvisible()
     {
         Destroy(gameObject,5);
+    }*/
+    [SerializeField] float destroyTime;
+
+    private void Start()
+    {
+        Destroy(gameObject,destroyTime);
     }
+
 }

@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: b56a301fac1698843ae1d348be465256, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
 --- !u!1 &3053069238252734403
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,3 +227,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: b56a301fac1698843ae1d348be465256, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}

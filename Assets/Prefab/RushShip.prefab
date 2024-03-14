@@ -56,6 +56,7 @@ MonoBehaviour:
   attackscript: {fileID: 3197584413838369717}
   animator: {fileID: 3667311763124860461}
   super: {fileID: -5732596060770719995}
+  explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
 --- !u!114 &3197584413838369717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,9 +84,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
-  controller: {fileID: 1411800993761083178}
-  shieldPrefab: {fileID: 2210018296552856983, guid: 269a7d40e843c1741b652ccc08dccffc, type: 3}
   superDuration: 10
+  shieldPrefab: {fileID: 2210018296552856983, guid: 269a7d40e843c1741b652ccc08dccffc, type: 3}
+  shieldZone: {fileID: 0}
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0

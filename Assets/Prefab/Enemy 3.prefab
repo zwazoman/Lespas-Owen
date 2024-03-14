@@ -136,6 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 9dd880aa03f71f14d9060d8e3117adec, type: 2}
   attackScript: {fileID: 2545142640908905469}
+  explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
 --- !u!114 &2545142640908905469
 MonoBehaviour:
   m_ObjectHideFlags: 0

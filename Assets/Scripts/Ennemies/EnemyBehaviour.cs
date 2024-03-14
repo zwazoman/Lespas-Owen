@@ -6,6 +6,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [SerializeField] EnemyClass infos;
     [SerializeField] Attack attackScript;
+    [SerializeField] GameObject explosion;
     Rigidbody2D rb;
     float speed;
     float rateOfFire;
@@ -29,18 +30,19 @@ public class EnemyBehaviour : MonoBehaviour
         attackScript.Shoot();
     }
 
+
     public void ApplyDamage(int damages)
     {
         hp -= damages;
         if(hp <= 0)
         {
+            Explode();
             Destroy(gameObject);
         }
     }
 
-    private void OnDestroy()
+    private void Explode()
     {
-        //animation de mort
-        print("destroyed");
+        Instantiate(explosion,transform.position, Quaternion.identity);
     }
 }

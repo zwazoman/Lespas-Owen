@@ -56,6 +56,7 @@ MonoBehaviour:
   attackscript: {fileID: 266055290747296144}
   animator: {fileID: 3667311763124860461}
   super: {fileID: 3032491158477492002}
+  explosion: {fileID: 2148499075999140616, guid: 513266dff56405c459ef3fcb8cf68aa0, type: 3}
 --- !u!114 &266055290747296144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,8 +84,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
-  infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
   superDuration: 5
+  infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0
