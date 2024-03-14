@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Super super;
     [SerializeField] GameObject explosion;
+    [SerializeField] TMP_Text hpText;
+    [SerializeField] TMP_Text cdText;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -98,10 +101,13 @@ public class PlayerController : MonoBehaviour
         {
             if (canShoot == true) 
             { 
-            attackscript.Shoot();
+            attackscript.Shoot(); 
             StartCoroutine(ShootManager());
             }
         }
+
+        hpText.text = hp.ToString();
+        cdText.text = cooldown.ToString();
     }
     
     IEnumerator ShootManager()
