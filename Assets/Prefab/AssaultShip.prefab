@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
   infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
+  superDuration: 5
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0

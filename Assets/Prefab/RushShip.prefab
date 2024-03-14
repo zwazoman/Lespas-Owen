@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4332994103807928234}
   - component: {fileID: 1411800993761083178}
   - component: {fileID: 3197584413838369717}
+  - component: {fileID: -5732596060770719995}
   - component: {fileID: 2677273714475130235}
   - component: {fileID: 266287201213493503}
   - component: {fileID: 7898238054645832036}
@@ -54,7 +55,7 @@ MonoBehaviour:
   infos: {fileID: 11400000, guid: d97c7e885fce96e47aae2b458d7bec1f, type: 2}
   attackscript: {fileID: 3197584413838369717}
   animator: {fileID: 3667311763124860461}
-  super: {fileID: 0}
+  super: {fileID: -5732596060770719995}
 --- !u!114 &3197584413838369717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +70,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootZone: {fileID: 5235448668373194021}
   controller: {fileID: 1411800993761083178}
+--- !u!114 &-5732596060770719995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2212913312023808756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8588c4b15e54c664581a70983124b71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1411800993761083178}
+  controller: {fileID: 1411800993761083178}
+  shieldPrefab: {fileID: 2210018296552856983, guid: 269a7d40e843c1741b652ccc08dccffc, type: 3}
+  superDuration: 10
 --- !u!61 &2677273714475130235
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,8 +13,10 @@ public class BulletDamages : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.SendMessage("ApplyDamage",damages) ;
-        print("ça touche");
+        if (collision.gameObject.tag != "Shield")
+        {
+            collision.gameObject.SendMessage("ApplyDamage",damages);
+        }
         Destroy(gameObject);
     }
     private void OnDestroy()

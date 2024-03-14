@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] internal CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
-    [SerializeField] SuperSteroid super;
+    [SerializeField] Super super;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         if (hasSpecial)
         {
-            super.StartSteroid();
+            super.StartSuper();
             hasSpecial = false;
             StartCoroutine(StartSpecialCooldown());
         }
