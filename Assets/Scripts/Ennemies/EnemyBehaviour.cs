@@ -10,6 +10,7 @@ public class EnemyBehaviour : MonoBehaviour
     float speed;
     float rateOfFire;
     int hp;
+    internal GameObject bullet;
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class EnemyBehaviour : MonoBehaviour
         speed = infos.speed;
         hp = infos.hp;
         rateOfFire = infos.rateOfFire;
-        attackScript.bullet = infos.bullet;
+        bullet = infos.bullet;
         attackScript.rateOfFire = rateOfFire;
     }
 

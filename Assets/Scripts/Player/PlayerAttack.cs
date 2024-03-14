@@ -6,11 +6,12 @@ using static UnityEditor.PlayerSettings;
 public class PlayerAttack : Attack
 {
     [SerializeField] GameObject shootZone;
+    [SerializeField] PlayerController controller;
 
 
     public override void Shoot()
     {
-        Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
+        Instantiate(controller.bullet, shootZone.transform.position, Quaternion.identity);
 
     }
 

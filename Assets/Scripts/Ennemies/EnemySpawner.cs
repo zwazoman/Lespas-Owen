@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator EnemySpawn()
     {
         yield return new WaitForSeconds(2);
-        while (Playercontroller.instance != null)
+        while (PlayerController.instance != null)
         {
             GameObject randomEnemy = SoloEnemyList[Random.Range(0, SoloEnemyList.Count)];
             if(randomEnemy == SoloEnemyList[1])

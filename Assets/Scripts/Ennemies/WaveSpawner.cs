@@ -22,7 +22,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator WaveSpawn()
     {
         yield return new WaitForSeconds(firstWaveSpawnTime);
-        while (Playercontroller.instance != null)
+        while (PlayerController.instance != null)
         {
             enemySpawner.SetActive(false);
             int randomIndex = Random.Range(0, waveEnemyList.Count);

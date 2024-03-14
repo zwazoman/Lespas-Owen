@@ -5,15 +5,23 @@ using static UnityEditor.PlayerSettings;
 
 public class SuperSteroid : MonoBehaviour
 {
-   /* 
+    [SerializeField] PlayerController controller;
+    [SerializeField] CharacterClass infos;
+    float rateOfFire;
+    
     public void StartSteroid()
     {
         StartCoroutine(StartSuper());
     }
     IEnumerator StartSuper()
     {
-        rateOfFire /= 2;
-        yield return new WaitForSeconds(5);
         rateOfFire = infos.rateOfFire;
-    }*/
+        rateOfFire /= 2.5f;
+        controller.rateOfFire = rateOfFire;
+        controller.bullet = controller.infos.specialBullet;
+        yield return new WaitForSeconds(3);
+        rateOfFire = infos.rateOfFire;
+        controller.bullet = controller.infos.bullet;
+        controller.rateOfFire = rateOfFire;
+    }
 }

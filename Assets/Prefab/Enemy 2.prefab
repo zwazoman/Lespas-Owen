@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 6572614991422996254}
   - component: {fileID: 4417940613403076911}
   - component: {fileID: 5405500112103584647}
+  - component: {fileID: -3757572174980809203}
   - component: {fileID: 6211382583660305470}
   - component: {fileID: 2280957721482654780}
-  - component: {fileID: -3757572174980809203}
   - component: {fileID: 3486715175953104396}
   m_Layer: 7
   m_Name: Enemy 2
@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootZone: {fileID: 1930762342197965387}
+  behaviour: {fileID: 6572614991422996254}
 --- !u!114 &5405500112103584647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +165,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 4
   frequency: 1
+--- !u!114 &-3757572174980809203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4019564160824661891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c9399b1809ab44a8cb05b8d4ff82e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &6211382583660305470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -236,18 +249,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-3757572174980809203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4019564160824661891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c9399b1809ab44a8cb05b8d4ff82e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &3486715175953104396
 Animator:
   serializedVersion: 5

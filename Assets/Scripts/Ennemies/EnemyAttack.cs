@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyAttack : Attack
 {
     [SerializeField] GameObject shootZone;
+    [SerializeField] EnemyBehaviour behaviour;
     public override void Shoot()
     {
         StartCoroutine(EnemyShoot());
@@ -13,7 +14,7 @@ public class EnemyAttack : Attack
     IEnumerator EnemyShoot()
     {
 ;
-        Instantiate(bullet, shootZone.transform.position, Quaternion.identity);
+        Instantiate(behaviour.bullet, shootZone.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(rateOfFire);
         StartCoroutine(EnemyShoot());
     }

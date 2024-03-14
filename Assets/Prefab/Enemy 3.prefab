@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootZone: {fileID: 1802707850997750608}
+  behaviour: {fileID: 6135037562891200549}
 --- !u!114 &-2759224546702605721
 MonoBehaviour:
   m_ObjectHideFlags: 0

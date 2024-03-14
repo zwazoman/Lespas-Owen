@@ -5,35 +5,39 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
-public class Playercontroller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public static Playercontroller instance;
+    public static PlayerController instance;
 
     private PlayerControls playerControls;
     Rigidbody2D rb;
     float moveSpeed;
-    float rateOfFire;
+    internal float rateOfFire;
     int hp;
-    [SerializeField] CharacterClass infos;
+    internal GameObject bullet;
+    float cooldown;
+    bool hasSpecial = true;
+    [SerializeField] internal CharacterClass infos;
     [SerializeField] Attack attackscript;
     [SerializeField] Animator animator;
-    [SerializeField] SuperSteroid super1;
+    [SerializeField] SuperSteroid super;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
     private bool spaceHold = false;
     private bool canShoot = true;
-    [SerializeField] private GameObject super;
+
     private void Awake()
     {
         instance = this;
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         moveSpeed = infos.speed;
-        attackscript.bullet = infos.bullet;
         rateOfFire = infos.rateOfFire;
         attackscript.rateOfFire = rateOfFire;
         hp = infos.hp;
+        cooldown = infos.cooldown;
+        bullet = infos.bullet;
     }
 
     public void OnShoot(InputAction.CallbackContext value)
@@ -50,9 +54,13 @@ public class Playercontroller : MonoBehaviour
 
     public void OnSpecial(InputAction.CallbackContext callback)
     {
-        super1.StartSteroid();
-        Debug.Log("feur");
-        
+        if (hasSpecial)
+        {
+            super.StartSteroid();
+            hasSpecial = false;
+            StartCoroutine(StartSpecialCooldown());
+        }
+        Debug.Log("feur"); 
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
@@ -102,6 +110,11 @@ public class Playercontroller : MonoBehaviour
         canShoot = true;       
     }
 
+    IEnumerator StartSpecialCooldown()
+    {
+        yield return new WaitForSeconds(cooldown);
+        hasSpecial = true;
+    }
     public void ApplyDamage(int damages)
     {
         hp -= damages;

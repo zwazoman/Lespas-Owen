@@ -14,11 +14,13 @@ public class BulletTowardsPlayer : MonoBehaviour
 
     private void Awake()
     {
-        playerPosition = Playercontroller.instance.transform.position;
-        projectileSpeed = projectileClass.speed;
-        despawnTime = projectileClass.despawnTime;
-        Destroy(gameObject, despawnTime);
-        towardsPlayer = new Vector2(playerPosition.x - transform.position.x,playerPosition.y - transform.position.y); 
+        if (PlayerController.instance != null) { 
+            playerPosition = PlayerController.instance.transform.position;
+            projectileSpeed = projectileClass.speed;
+            despawnTime = projectileClass.despawnTime;
+            Destroy(gameObject, despawnTime);
+            towardsPlayer = new Vector2(playerPosition.x - transform.position.x, playerPosition.y - transform.position.y);
+        }
     }
     private void Update()
     {
