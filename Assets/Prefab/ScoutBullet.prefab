@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 4311526839557549681}
   - component: {fileID: 4987413461318842614}
   - component: {fileID: 2445926911873478905}
-  - component: {fileID: 3662335279702519194}
+  - component: {fileID: 229465871315936490}
   - component: {fileID: 7771152771427754818}
   m_Layer: 8
   m_Name: Capsule
@@ -207,7 +207,7 @@ PolygonCollider2D:
       - {x: 0.13191992, y: -0.12858695}
       - {x: 0.12795568, y: 0.0035805851}
   m_UseDelaunayMesh: 0
---- !u!114 &3662335279702519194
+--- !u!114 &229465871315936490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6443246425285022652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a3a61cfe02514d4e8070aded7a236a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b271f1f56c412c45b6d1bccad837900, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   infos: {fileID: 11400000, guid: 462ee5ef4a17ebb45a12df54799b2e09, type: 2}

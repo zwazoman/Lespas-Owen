@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dd455ab2e074a47a2ace3d0d7eb88a, type: 3}
   m_Name: Enemy3
   m_EditorClassIdentifier: 
-  <speed>k__BackingField: 22
+  <speed>k__BackingField: 2.2
   <hp>k__BackingField: 12
   <rateOfFire>k__BackingField: 3
   <bullet>k__BackingField: {fileID: 2784261314717550438, guid: 602b9734b55a61f48a65221855a69a26, type: 3}

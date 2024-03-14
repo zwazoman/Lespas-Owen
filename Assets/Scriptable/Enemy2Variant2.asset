@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3dd455ab2e074a47a2ace3d0d7eb88a, type: 3}
   m_Name: Enemy2Variant2
   m_EditorClassIdentifier: 
-  <speed>k__BackingField: 20
+  <speed>k__BackingField: 2
   <hp>k__BackingField: 6
   <rateOfFire>k__BackingField: 0.4
   <bullet>k__BackingField: {fileID: 7502896682663092760, guid: 04f4b094a679b754f85ab98b0ab49b5b, type: 3}
