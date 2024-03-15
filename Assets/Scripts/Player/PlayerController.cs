@@ -6,12 +6,14 @@ using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 using TMPro;
 using UnityEngine.EventSystems;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
     private PlayerControls playerControls;
+    private CinemachineImpulseSource impulseSource;
     Rigidbody2D rb;
     float moveSpeed;
     internal float rateOfFire;
@@ -47,6 +49,7 @@ public class PlayerController : MonoBehaviour
         cooldown = infos.cooldown;
         bullet = infos.bullet;
         coll = GetComponent<Collider2D>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
     public void OnShoot(InputAction.CallbackContext value)
@@ -139,16 +142,16 @@ public class PlayerController : MonoBehaviour
             panelDeath.SetActive(true);
             EventSystem.current.SetSelectedGameObject(switchMenu);
         }
-        StartCoroutine(HitStop());
+        ShakeManager.instance.CameraShake(impulseSource);
         StartCoroutine(InvincibilityFrames());
     }
 
-    IEnumerator HitStop()
+    /*IEnumerator HitStop()
     {
         Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(0.3f);
         Time.timeScale = 1;
-    }
+    }*/
     IEnumerator InvincibilityFrames()
     {
         coll.enabled = false;
