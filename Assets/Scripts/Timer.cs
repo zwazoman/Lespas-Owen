@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     float _timer;
     void Awake ()
     {
-        _timer = 10;
+        _timer = 120;
         timerText.text = _timer.ToString();
     }
 
