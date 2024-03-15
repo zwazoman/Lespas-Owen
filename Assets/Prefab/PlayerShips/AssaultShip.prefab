@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
-  superDuration: 5
+  superDuration: 3
   infos: {fileID: 11400000, guid: 449bd11217251a4498d021ae5aeb394e, type: 2}
 --- !u!114 &3213662777364529643
 MonoBehaviour:

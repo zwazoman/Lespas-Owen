@@ -30,9 +30,6 @@ public class CharacterClass : ScriptableObject
     public bool scout { get; private set; }
 
     [field: SerializeField]
-    public float recoil { get; private set; }
-
-    [field: SerializeField]
     public GameObject specialBullet { get; private set; }
 }
 
