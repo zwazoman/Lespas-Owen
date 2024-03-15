@@ -334,6 +334,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
+--- !u!1 &143507735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2212913312023808756, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
+  m_PrefabInstance: {fileID: 143507734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145661024
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +719,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d6c0ad3c6e665e4c90f38868d0429c7, type: 3}
+--- !u!114 &284688165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5697297493029328813, guid: 0d6c0ad3c6e665e4c90f38868d0429c7, type: 3}
+  m_PrefabInstance: {fileID: 284688164}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4193e0b20de5cc641934c545bbb72d5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &285020329
 GameObject:
   m_ObjectHideFlags: 0
@@ -6783,19 +6799,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2003400242}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6807,7 +6811,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1473095769}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -6819,7 +6823,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 374285771}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 284688165}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: StartGamme
         m_Mode: 1
@@ -8439,6 +8455,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
+--- !u!1 &1376845182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2212913312023808756, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
+  m_PrefabInstance: {fileID: 1376845181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428847225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14408,7 +14429,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1376845182}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14420,7 +14441,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1473095769}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14432,7 +14453,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 374285771}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14444,7 +14465,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 284688165}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: StartGamme
         m_Mode: 1
@@ -14571,6 +14592,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
+--- !u!1 &2003400242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2212913312023808756, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
+  m_PrefabInstance: {fileID: 2003400241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048769453
 GameObject:
   m_ObjectHideFlags: 0
@@ -14655,7 +14681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 143507735}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14667,7 +14693,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1473095769}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14679,7 +14705,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 374285771}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14691,7 +14717,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 284688165}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: StartGamme
         m_Mode: 1
