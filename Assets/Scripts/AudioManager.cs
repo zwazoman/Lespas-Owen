@@ -14,8 +14,7 @@ public class AudioManager : MonoBehaviour
     [Header("AudioClips")]
     public AudioClip music;
     public AudioClip assaultShootSound;
-    public AudioClip assaultSpecialStartSound;
-    public AudioClip assaultSpecialEndSound;
+    public AudioClip assaultSpecialSound;
     public AudioClip rushShootSound;
     public AudioClip rushSpecialSound;
     public AudioClip scoutShootSound;

@@ -15,4 +15,4 @@ MonoBehaviour:
   <speed>k__BackingField: 3
   <hp>k__BackingField: 2
   <rateOfFire>k__BackingField: 3
-  <bullet>k__BackingField: {fileID: 7502896682663092760, guid: 45c4785b718bae049a5f27a344fbe9a3, type: 3}
+  <bullet>k__BackingField: {fileID: 7502896682663092760, guid: 4687e48f3ba6bee498bf23ec11bfa259, type: 3}

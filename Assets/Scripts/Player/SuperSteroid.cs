@@ -18,9 +18,9 @@ public class SuperSteroid : Super
         rateOfFire /= 2.5f;
         controller.rateOfFire = rateOfFire;
         controller.bullet = controller.infos.specialBullet;
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.assaultSpecialStartSound);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.assaultSpecialSound);
         yield return new WaitForSeconds(superDuration);
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.assaultSpecialEndSound);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.assaultSpecialSound);
         rateOfFire = infos.rateOfFire;
         controller.bullet = controller.infos.bullet;
         controller.rateOfFire = rateOfFire;

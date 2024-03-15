@@ -15,7 +15,7 @@ MonoBehaviour:
   <speed>k__BackingField: 8
   <rateOfFire>k__BackingField: 0.3
   <hp>k__BackingField: 5
-  <cooldown>k__BackingField: 50
+  <cooldown>k__BackingField: 30
   <bullet>k__BackingField: {fileID: 7018615852445669963, guid: 140da6f0e09d39e4cb8b5b63c08dd3fc, type: 3}
   <assault>k__BackingField: 1
   <rush>k__BackingField: 0

@@ -10,12 +10,14 @@ public class SuperShield : Super
     
     public override void StartSuper()
     {
-        StartShield();
+        StartCoroutine(StartShield());
     }
-    void StartShield()
+    IEnumerator StartShield()
     {
         shield = Instantiate(shieldPrefab, transform);
         AudioManager.Instance.PlaySFX(AudioManager.Instance.rushSpecialSound);
-        Destroy(shield,superDuration) ;
+        yield return new WaitForSeconds(superDuration);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.rushSpecialSound);
+        Destroy(shield);
     }
 }
