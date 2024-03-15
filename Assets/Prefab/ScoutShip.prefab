@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
-  superDuration: 1
+  superDuration: 0.5
   explosionPrefab: {fileID: 5001941393490388547, guid: 9b2f4387197e2d846aa179a5f13b4d01, type: 3}
 --- !u!61 &2677273714475130235
 BoxCollider2D:

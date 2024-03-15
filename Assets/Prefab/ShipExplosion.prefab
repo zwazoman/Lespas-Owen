@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4600330982692668288}
   - component: {fileID: 3305133214004152541}
   - component: {fileID: 9042828929319741537}
+  - component: {fileID: 6903801523499312948}
   m_Layer: 0
   m_Name: ShipExplosion
   m_TagString: Untagged
@@ -106,3 +107,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6903801523499312948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148499075999140616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377a8172b9b1d3c448fcd7371eae4fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 0.5
