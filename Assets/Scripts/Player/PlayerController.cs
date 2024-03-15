@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] TMP_Text cdText;
     [SerializeField] GameObject panelDeath;
     [SerializeField] GameObject switchMenu;
+    [SerializeField] GameObject cdPanel;
     private Vector3 mouvement;
     internal Vector2 InputValue;
     private bool isStickUse = false;
@@ -76,6 +77,7 @@ public class PlayerController : MonoBehaviour
             hasSpecial = false;
             StartCoroutine(StartSpecialCooldown());
             StartCoroutine(StartVisualCd());
+
         }
     }
 
@@ -133,7 +135,7 @@ public class PlayerController : MonoBehaviour
     }
 
     IEnumerator StartSpecialCooldown()
-    {
+    {     
         yield return new WaitForSeconds(cooldown);
         hasSpecial = true;
     }
@@ -176,12 +178,14 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator StartVisualCd()
     {
+        cdPanel.SetActive(true);
         cdForText = cooldown;
         while (cdForText > 0f)
         {
             cdForText -= 1f;
             yield return new WaitForSeconds(1f);
-
+           
         }
+        cdPanel.SetActive(false);
     }
 }
