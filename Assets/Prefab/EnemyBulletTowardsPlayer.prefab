@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2238680483833448138}
   - component: {fileID: 2852430114144293974}
   - component: {fileID: 7791692984656051184}
-  - component: {fileID: 7060280147555681371}
+  - component: {fileID: 4771897116397504768}
   m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1612576200, guid: 4e7e23e7d7daa274cbf5e56247f5bbe8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.26552445, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -143,7 +143,7 @@ PolygonCollider2D:
       - {x: 0.025350593, y: 0.015289188}
       - {x: 0.015303762, y: 0.015303755}
   m_UseDelaunayMesh: 0
---- !u!114 &7060280147555681371
+--- !u!114 &4771897116397504768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,8 +166,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4844699442861286617}
-  - component: {fileID: 6354663246258248796}
-  - component: {fileID: 7329406118817006896}
+  - component: {fileID: 537030288203949088}
+  - component: {fileID: -3102829266545386735}
   m_Layer: 8
   m_Name: EnemyBulletTowardsPlayer
   m_TagString: Bullet
@@ -191,21 +191,7 @@ Transform:
   - {fileID: 2238680483833448138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6354663246258248796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7502896682663092760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6fe888b3a5ce1488a0c264210d7203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileClass: {fileID: 11400000, guid: 009ce6d6ccdd3af41a9d9f624fd36586, type: 2}
-  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
---- !u!95 &7329406118817006896
+--- !u!95 &537030288203949088
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -226,3 +212,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3102829266545386735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502896682663092760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f6fe888b3a5ce1488a0c264210d7203, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileClass: {fileID: 11400000, guid: 009ce6d6ccdd3af41a9d9f624fd36586, type: 2}
+  explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}

@@ -19,5 +19,6 @@ public class ExplosionDamage : MonoBehaviour
         {
         collision.gameObject.SendMessage("ApplyDamage", damages);
         }
+        collision.gameObject.SendMessage("Explode");
     }
 }

@@ -47,7 +47,7 @@ public class EnemyBehaviour : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosion,transform.position, Quaternion.identity);
-        //AudioManager.Instance.PlayEnemyDeath();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.enemyDeathSound);
     }
 
     IEnumerator ChangeScale()

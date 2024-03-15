@@ -13,7 +13,7 @@ public class SuperExplosion : Super
     void Explosion()
     {
         GameObject explosion = Instantiate(explosionPrefab,transform.position,Quaternion.identity) ;
-        //AudioManager.Instance.PlayScoutSpecial();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.scoutSpecialSound);
         Destroy(explosion,superDuration);
     }
 }

@@ -7,6 +7,7 @@ using static UnityEngine.InputSystem.InputAction;
 using TMPro;
 using UnityEngine.EventSystems;
 using Cinemachine;
+using UnityEngine.Networking;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     float cooldown;
     bool hasSpecial = true;
     float cdForText;
+    AudioManager audioManager;
     [SerializeField] Collider2D coll;
     [SerializeField] internal CharacterClass infos;
     [SerializeField] Attack attackscript;
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour
         bullet = infos.bullet;
         coll = GetComponent<Collider2D>();
         impulseSource = GetComponent<CinemachineImpulseSource>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     public void OnShoot(InputAction.CallbackContext value)
@@ -109,9 +112,12 @@ public class PlayerController : MonoBehaviour
         if (spaceHold)
         {
             if (canShoot == true) 
-            { 
-            attackscript.Shoot(); 
-            StartCoroutine(ShootManager());
+            {
+                if (infos.assault) { audioManager.PlaySFX(audioManager.assaultShootSound); }
+                else if (infos.rush) { audioManager.PlaySFX(audioManager.rushShootSound); }
+                else { AudioManager.Instance.PlaySFX(audioManager.scoutShootSound); }
+                attackscript.Shoot(); 
+                StartCoroutine(ShootManager());
             }
         }
 
@@ -143,6 +149,7 @@ public class PlayerController : MonoBehaviour
             panelDeath.SetActive(true);
             EventSystem.current.SetSelectedGameObject(switchMenu);
         }
+        audioManager.PlaySFX(audioManager.playerHitSound);
         ShakeManager.instance.CameraShake(impulseSource);
         StartCoroutine(InvincibilityFrames());
     }
@@ -164,7 +171,7 @@ public class PlayerController : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosion,transform.position, Quaternion.identity);
-        //AudioManager.Instance.PlayPlayerDeath();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.playerDeathSound);
     }
 
     IEnumerator StartVisualCd()

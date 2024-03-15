@@ -15,7 +15,7 @@ public class SuperShield : Super
     void StartShield()
     {
         shield = Instantiate(shieldPrefab, transform);
-        //AudioManager.Instance.PlayRushSpecial();
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.rushSpecialSound);
         Destroy(shield,superDuration) ;
     }
 }
