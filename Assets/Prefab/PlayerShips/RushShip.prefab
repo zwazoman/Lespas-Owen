@@ -63,6 +63,7 @@ MonoBehaviour:
   cdText: {fileID: 0}
   panelDeath: {fileID: 0}
   switchMenu: {fileID: 0}
+  cdPanel: {fileID: 0}
 --- !u!114 &3197584413838369717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1411800993761083178}
-  superDuration: 10
+  superDuration: 3
   shieldPrefab: {fileID: 2210018296552856983, guid: 269a7d40e843c1741b652ccc08dccffc, type: 3}
 --- !u!61 &2677273714475130235
 BoxCollider2D:

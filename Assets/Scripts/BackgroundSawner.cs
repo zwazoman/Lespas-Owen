@@ -9,7 +9,6 @@ public class BackgroundSpawner : MonoBehaviour
     [SerializeField] float minBGSpawnTime;
     [SerializeField] float maxBGSpawnTime;
     Vector2 spawnPoint;
-    float xSpawn = 10;
 
     private void Start()
     {
