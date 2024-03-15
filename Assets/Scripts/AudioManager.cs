@@ -19,6 +19,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip enemyDeathSound;
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] AudioClip bulletHitSound;
+    [SerializeField] AudioClip playerHitSound;
+    [SerializeField] AudioClip startSound;
 
 
     private void Awake()
@@ -59,6 +61,9 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBulletHit() { PlaySound(bulletHitSound); }
 
+    public void PlayPlayerHit() { PlaySound(playerHitSound); }
+
+    public void PlayStart() { PlaySound(startSound); }
 
 
     public void PlaySound(AudioClip clip, float _pitch = 1, float _volume = 1)

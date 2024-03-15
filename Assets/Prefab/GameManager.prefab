@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5697297493029328813}
   - component: {fileID: 134552025954718263}
   - component: {fileID: 3388919148865815179}
+  - component: {fileID: -108080082736120303}
+  - component: {fileID: -2734792862329130577}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -71,3 +73,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a81069c00ac6843b5a50268b9bb470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-108080082736120303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249933799436559358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17987ee9cf45a8c428c4acb9509ff99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2734792862329130577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249933799436559358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591a4334ad8cae546950e1b74cc56083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assaultShootSound: {fileID: 8300000, guid: f9ddbaed531e391429522820b678b9ca, type: 3}
+  assaultSpecialStartSound: {fileID: 8300000, guid: f7bf76c7d0e242c45a2454b45698041d, type: 3}
+  assaultSpecialEndSound: {fileID: 8300000, guid: f7bf76c7d0e242c45a2454b45698041d, type: 3}
+  rushShootSound: {fileID: 8300000, guid: 6f71490a9f56e5b4e82d618b98b75ed6, type: 3}
+  rushSpecialSound: {fileID: 0}
+  scoutShootSound: {fileID: 8300000, guid: 2612972f97de29b469c0e44cd87a25b4, type: 3}
+  scoutSpecialSound: {fileID: 0}
+  enemyShootSound: {fileID: 8300000, guid: 145f61cbb759e19449cc9232e48c5cba, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: 509b4fee71d4dd241b374f648d7dd033, type: 3}
+  playerDeathSound: {fileID: 8300000, guid: 509b4fee71d4dd241b374f648d7dd033, type: 3}
+  bulletHitSound: {fileID: 0}
+  playerHitSound: {fileID: 8300000, guid: c0104f7c4cb7d614589331255a80a1c6, type: 3}
+  startSound: {fileID: 8300000, guid: 6f04977ccf0f05347a65bd012b8c2195, type: 3}

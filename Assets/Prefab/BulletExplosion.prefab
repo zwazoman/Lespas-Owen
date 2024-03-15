@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3327113048671997467}
   - component: {fileID: 8908511151033342494}
   - component: {fileID: 1087050661151046544}
-  - component: {fileID: 7767303004848823160}
+  - component: {fileID: -7670755094523668611}
   m_Layer: 0
   m_Name: BulletExplosion
   m_TagString: Untagged
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377a8172b9b1d3c448fcd7371eae4fcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 0.35
---- !u!95 &7767303004848823160
+  destroyTime: 0.25
+--- !u!95 &-7670755094523668611
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0

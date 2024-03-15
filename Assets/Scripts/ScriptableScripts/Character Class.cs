@@ -21,6 +21,18 @@ public class CharacterClass : ScriptableObject
     public GameObject bullet { get; private set; }
 
     [field: SerializeField]
+    public bool assault { get; private set; }
+
+    [field: SerializeField]
+    public bool rush { get; private set; }
+
+    [field: SerializeField]
+    public bool scout { get; private set; }
+
+    [field: SerializeField]
+    public float recoil { get; private set; }
+
+    [field: SerializeField]
     public GameObject specialBullet { get; private set; }
 }
 

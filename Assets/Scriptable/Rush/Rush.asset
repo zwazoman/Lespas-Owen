@@ -17,4 +17,8 @@ MonoBehaviour:
   <hp>k__BackingField: 8
   <cooldown>k__BackingField: 30
   <bullet>k__BackingField: {fileID: 1191670343873468113, guid: 36c818256bb0b8d448afdd824ba14ee8, type: 3}
+  <assault>k__BackingField: 0
+  <rush>k__BackingField: 1
+  <scout>k__BackingField: 0
+  <recoil>k__BackingField: 0
   <specialBullet>k__BackingField: {fileID: 0}
