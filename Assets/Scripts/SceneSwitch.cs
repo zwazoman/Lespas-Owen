@@ -7,7 +7,7 @@ public class SceneSwitch : MonoBehaviour
 {
     public void GoPlay()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 
     public void Leave()
@@ -19,5 +19,10 @@ public class SceneSwitch : MonoBehaviour
     public void GoMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void GoLevel2()
+    {
+        SceneManager.LoadScene("Level2");
     }
 }
