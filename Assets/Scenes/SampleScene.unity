@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.935074
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3890996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 157751a624a00ce4d80fb2e9494abb9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -218,6 +218,7 @@ MonoBehaviour:
   - {fileID: 6102696681008362495, guid: 45f0fd888e5598a428642d7517600533, type: 3}
   - {fileID: 5179527341248431462, guid: 9595ab415eaf6ee4fafb432792835b43, type: 3}
   - {fileID: 8594050484616533560, guid: acfe6fb322e11b74686b3928ac318fed, type: 3}
+  - {fileID: 1506602395525998523, guid: 59961d7342d305644b3dd0f2374d909d, type: 3}
   minWaveSpawnTime: 15
   maxWaveSpawnTime: 40
   firstWaveSpawnTime: 1
@@ -5488,7 +5489,7 @@ MonoBehaviour:
   WaveEnemyList:
   - {fileID: 6102696681008362495, guid: 45f0fd888e5598a428642d7517600533, type: 3}
   minEnemySpawnTime: 1
-  maxEnemySpawnTime: 3
+  maxEnemySpawnTime: 2
   minWaveSpawnTimen: 3
   maxWaveSpawnTimen: 8
 --- !u!4 &1309820479
@@ -5520,15 +5521,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212913312023808756, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.8666935
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: 8de5e9866e1b4134993e4b8a6a4ba167, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10682,15 +10683,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212913312023808756, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7676544
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4708886
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332994103807928234, guid: c7cd8de90ef1bec45939b075c97b15ba, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10739,7 +10740,7 @@ SceneRoots:
   - {fileID: 1309820479}
   - {fileID: 145661026}
   - {fileID: 1969442722}
-  - {fileID: 1376845181}
   - {fileID: 143507734}
-  - {fileID: 551424534}
+  - {fileID: 1376845181}
   - {fileID: 2003400241}
+  - {fileID: 551424534}
