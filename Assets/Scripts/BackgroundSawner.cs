@@ -7,22 +7,22 @@ public class BackgroundSpawner : MonoBehaviour
     [SerializeField]
     List<GameObject> SoloEnemyList = new List<GameObject>();
     [SerializeField] float minBGSpawnTime;
-    [SerializeField] float maxPlanetSpawnTime;
+    [SerializeField] float maxBGSpawnTime;
     Vector2 spawnPoint;
     float xSpawn = 10;
 
     private void Start()
     {
-        StartCoroutine(SpawnPlanet());
+        StartCoroutine(SpawnBG());
     }
-    IEnumerator SpawnPlanet()
+    IEnumerator SpawnBG()
     {
         yield return new WaitForSeconds(2);
         while (PlayerController.instance != null)
         {
-            GameObject randomPlanet = SoloEnemyList[Random.Range(0, SoloEnemyList.Count)];
-            float timeBetweenSpawn = Random.Range(minEnemySpawnTime, maxEnemySpawnTime);
-            Instantiate(randomPlanet,spawnPoint,Quaternion.Euler(new Vector3(0,0,-90)));
+            GameObject randomBG = SoloEnemyList[Random.Range(0, SoloEnemyList.Count)];
+            float timeBetweenSpawn = Random.Range(minBGSpawnTime, maxBGSpawnTime);
+            Instantiate(randomBG,spawnPoint,Quaternion.Euler(new Vector3(0,0,-90)));
             yield return new WaitForSeconds(timeBetweenSpawn);
         }
 
