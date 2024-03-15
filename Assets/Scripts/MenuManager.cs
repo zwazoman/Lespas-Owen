@@ -5,14 +5,14 @@ using UnityEngine.EventSystems;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject switchMenu;
+   // [SerializeField]
+   // private GameObject switchMenu;
     [SerializeField] GameObject hudPanel;
     [SerializeField] GameObject deathPanel;
 
     public void SelectMenu()
     {
-        EventSystem.current.SetSelectedGameObject(switchMenu);
+        //EventSystem.current.SetSelectedGameObject(switchMenu);
     }
 
     public void DontShowHud () 
