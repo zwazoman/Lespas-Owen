@@ -111,8 +111,8 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        //hpText.text = hp.ToString();
-        //cdText.text = cooldown.ToString();
+        hpText.text = hp.ToString();
+        cdText.text = cooldown.ToString();
     }
     
     IEnumerator ShootManager()

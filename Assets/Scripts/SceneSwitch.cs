@@ -15,4 +15,9 @@ public class SceneSwitch : MonoBehaviour
         Application.Quit();
         Debug.Log("Quitté");
     }
+
+    public void GoMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
