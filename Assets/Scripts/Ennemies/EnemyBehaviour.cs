@@ -12,6 +12,8 @@ public class EnemyBehaviour : MonoBehaviour
     float rateOfFire;
     int hp;
     internal GameObject bullet;
+    SpriteRenderer sprite;
+
 
     private void Awake()
     {
@@ -34,6 +36,7 @@ public class EnemyBehaviour : MonoBehaviour
     public void ApplyDamage(int damages)
     {
         hp -= damages;
+        StartCoroutine(ChangeScale());
         if(hp <= 0)
         {
             Explode();
@@ -46,4 +49,12 @@ public class EnemyBehaviour : MonoBehaviour
         Instantiate(explosion,transform.position, Quaternion.identity);
         //AudioManager.Instance.PlayEnemyDeath();
     }
+
+    IEnumerator ChangeScale()
+    {
+        transform.localScale *= 1.1f;
+        yield return new WaitForSeconds(0.1f);
+        transform.localScale /= 1.1f;
+    }     
+    
 }
