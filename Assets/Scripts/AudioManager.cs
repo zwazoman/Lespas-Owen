@@ -27,6 +27,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip startSound;
 
 
+
     private void Awake()
     {
         // Singleton
