@@ -167,6 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4844699442861286617}
   - component: {fileID: 6354663246258248796}
+  - component: {fileID: 7329406118817006896}
   m_Layer: 8
   m_Name: EnemyBulletTowardsPlayer
   m_TagString: Bullet
@@ -204,3 +205,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileClass: {fileID: 11400000, guid: 009ce6d6ccdd3af41a9d9f624fd36586, type: 2}
   explosion: {fileID: 1191566538608651279, guid: a7a7ce4bf7483b14b84a17ce049d371c, type: 3}
+--- !u!95 &7329406118817006896
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502896682663092760}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c972caed283f3a345afaa3446777941f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

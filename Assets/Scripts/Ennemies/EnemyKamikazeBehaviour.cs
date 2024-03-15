@@ -30,7 +30,6 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
 
     public void ApplyDamage(int damages)
     {
-        print(damages);
         Explode();
         Destroy(gameObject);
     }
