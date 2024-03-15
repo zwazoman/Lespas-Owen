@@ -17,8 +17,16 @@ public class MenuManager : MonoBehaviour
 
     public void DontShowHud () 
     {
-   // if  (deathPanel.isActive) 
+    if  (deathPanel.activeSelf) 
         { 
+            hudPanel.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (deathPanel.activeSelf)
+        {
             hudPanel.SetActive(false);
         }
     }

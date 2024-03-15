@@ -7,7 +7,7 @@ public class SceneSwitch : MonoBehaviour
 {
     public void GoPlay()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level 1");
     }
 
     public void Leave()
@@ -23,6 +23,6 @@ public class SceneSwitch : MonoBehaviour
 
     public void GoLevel2()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("Level 2");
     }
 }
