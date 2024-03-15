@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     internal GameObject bullet;
     float cooldown;
     bool hasSpecial = true;
+    float cdForText;
     [SerializeField] Collider2D coll;
     [SerializeField] internal CharacterClass infos;
     [SerializeField] Attack attackscript;
@@ -71,8 +72,8 @@ public class PlayerController : MonoBehaviour
             super.StartSuper();
             hasSpecial = false;
             StartCoroutine(StartSpecialCooldown());
+            StartCoroutine(StartVisualCd());
         }
-        Debug.Log("feur"); 
     }
 
     public void OnMove(InputAction.CallbackContext callbackContext)
@@ -115,7 +116,7 @@ public class PlayerController : MonoBehaviour
         }
 
         hpText.text = hp.ToString();
-        cdText.text = cooldown.ToString();
+        cdText.text = cdForText.ToString();
     }
     
     IEnumerator ShootManager()
@@ -155,12 +156,25 @@ public class PlayerController : MonoBehaviour
     IEnumerator InvincibilityFrames()
     {
         coll.enabled = false;
+        animator.SetBool("DegatsAnim", true);
         yield return new WaitForSeconds(1);
         coll.enabled = true;
+        animator.SetBool("DegatsAnim", false);
     }
     private void Explode()
     {
         Instantiate(explosion,transform.position, Quaternion.identity);
         //AudioManager.Instance.PlayPlayerDeath();
+    }
+
+    IEnumerator StartVisualCd()
+    {
+        cdForText = cooldown;
+        while (cdForText > 0f)
+        {
+            cdForText -= 1f;
+            yield return new WaitForSeconds(1f);
+
+        }
     }
 }
