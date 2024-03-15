@@ -1,32 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using Unity.VisualScripting;
 
-public class Timer : MonoBehaviour
+public class Chronometre : MonoBehaviour
 {
     [SerializeField] TMP_Text timerText;
     float _timer;
-    void Awake ()
+    void Awake()
     {
-        _timer = 10;
+        _timer = 0;
         timerText.text = _timer.ToString();
     }
 
     void Update()
     {
-        if (_timer > 0)
-        {
-            _timer -= Time.deltaTime;           
-        }
+        _timer += Time.deltaTime;
         timerText.text = _timer.ToString();
-
-        if (_timer <= 0)
-        {
-            SceneManager.LoadScene("Level 2");
-        }
         DisplayTime(_timer);
     }
 
