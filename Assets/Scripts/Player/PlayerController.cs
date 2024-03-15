@@ -158,5 +158,6 @@ public class PlayerController : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosion,transform.position, Quaternion.identity);
+        //AudioManager.Instance.PlayPlayerDeath();
     }
 }

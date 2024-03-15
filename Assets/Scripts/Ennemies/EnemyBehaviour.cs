@@ -44,5 +44,6 @@ public class EnemyBehaviour : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosion,transform.position, Quaternion.identity);
+        //AudioManager.Instance.PlayEnemyDeath();
     }
 }

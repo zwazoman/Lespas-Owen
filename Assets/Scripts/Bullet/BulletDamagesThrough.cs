@@ -14,5 +14,6 @@ public class BulletDamagesThrough : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.gameObject.SendMessage("ApplyDamage",damages) ;
+        //AudioManager.Instance.PlayBulletHit();
     }
 }

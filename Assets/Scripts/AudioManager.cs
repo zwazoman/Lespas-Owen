@@ -9,7 +9,8 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance => _instance;
 
     [SerializeField] AudioClip assaultShootSound;
-    [SerializeField] AudioClip assaultSpecialSound;
+    [SerializeField] AudioClip assaultSpecialStartSound;
+    [SerializeField] AudioClip assaultSpecialEndSound;
     [SerializeField] AudioClip rushShootSound;
     [SerializeField] AudioClip rushSpecialSound;
     [SerializeField] AudioClip scoutShootSound;
@@ -17,6 +18,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip enemyShootSound;
     [SerializeField] AudioClip enemyDeathSound;
     [SerializeField] AudioClip playerDeathSound;
+    [SerializeField] AudioClip bulletHitSound;
 
 
     private void Awake()
@@ -35,18 +37,29 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayAssaultShoot()
-    {
-        PlaySound(assaultShootSound);
-    }
-    public void PlayAssaultSpecial()
-    {
-        PlaySound(assaultSpecialSound);
-    }
-    public void PlayRushShoot()
-    {
-        PlaySound(rushShootSound);
-    }
+    public void PlayAssaultShoot() { PlaySound(assaultShootSound); }
+
+    public void PlayAssaultSpecialStart() { PlaySound(assaultSpecialStartSound); }
+
+    public void PlayAssaultSpecialEnd() {  PlaySound(assaultSpecialEndSound); }
+
+    public void PlayRushShoot() { PlaySound(rushShootSound); }
+
+    public void PlayRushSpecial() {  PlaySound(rushSpecialSound); }
+
+    public void PlayScoutShoot() { PlaySound(scoutShootSound); }
+
+    public void PlayScoutSpecial() {  PlaySound(scoutSpecialSound); }
+
+    public void PlayEnemyShoot() { PlaySound(enemyShootSound); }
+
+    public void PlayEnemyDeath() { PlaySound(enemyDeathSound); }
+
+    public void PlayPlayerDeath() { PlaySound(playerDeathSound); }
+
+    public void PlayBulletHit() { PlaySound(bulletHitSound); }
+
+
 
     public void PlaySound(AudioClip clip, float _pitch = 1, float _volume = 1)
     {

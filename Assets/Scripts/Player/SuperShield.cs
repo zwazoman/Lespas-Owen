@@ -14,8 +14,8 @@ public class SuperShield : Super
     }
     void StartShield()
     {
-        print("chien");
         shield = Instantiate(shieldPrefab, transform);
+        //AudioManager.Instance.PlayRushSpecial();
         Destroy(shield,superDuration) ;
     }
 }

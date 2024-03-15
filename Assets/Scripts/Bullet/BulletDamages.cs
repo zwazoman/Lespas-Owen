@@ -24,5 +24,6 @@ public class BulletDamages : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
+        //AudioManager.Instance.PlayBulletHit();
     }
 }

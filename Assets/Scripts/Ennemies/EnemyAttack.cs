@@ -15,6 +15,7 @@ public class EnemyAttack : Attack
     {
 ;
         Instantiate(behaviour.bullet, shootZone.transform.position, Quaternion.identity);
+        //AudioManager.Instance.PlayEnemyShoot();
         yield return new WaitForSeconds(rateOfFire);
         StartCoroutine(EnemyShoot());
     }

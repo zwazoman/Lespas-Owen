@@ -12,8 +12,8 @@ public class SuperExplosion : Super
     }
     void Explosion()
     {
-        print("CONNARD DE NOAH");
         GameObject explosion = Instantiate(explosionPrefab,transform.position,Quaternion.identity) ;
+        //AudioManager.Instance.PlayScoutSpecial();
         Destroy(explosion,superDuration);
     }
 }
