@@ -46,7 +46,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -183,12 +183,11 @@ MonoBehaviour:
   rushSpecialSound: {fileID: 8300000, guid: f9ddbaed531e391429522820b678b9ca, type: 3}
   scoutShootSound: {fileID: 8300000, guid: 2612972f97de29b469c0e44cd87a25b4, type: 3}
   scoutSpecialSound: {fileID: 8300000, guid: 6f04977ccf0f05347a65bd012b8c2195, type: 3}
-  enemyShootSound: {fileID: 0}
-  enemyDeathSound: {fileID: 8300000, guid: 509b4fee71d4dd241b374f648d7dd033, type: 3}
-  playerDeathSound: {fileID: 8300000, guid: 509b4fee71d4dd241b374f648d7dd033, type: 3}
+  enemyShootSound: {fileID: 8300000, guid: 3234c43836326e645bba1393f4abe60b, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: a84da438aad46ba48b58a750e905d5ad, type: 3}
+  playerDeathSound: {fileID: 8300000, guid: 70f4221eea8c76d4b896b8284ce6d37b, type: 3}
   bulletHitSound: {fileID: 8300000, guid: 6cf25411a7338ed439a7dfd1e339ac7c, type: 3}
   playerHitSound: {fileID: 8300000, guid: c0104f7c4cb7d614589331255a80a1c6, type: 3}
-  startSound: {fileID: 0}
 --- !u!1 &4973830165999801796
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd8af5d3f91dfa489b9ad3b23c9d013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  switchMenu: {fileID: 0}
   hudPanel: {fileID: 0}
   deathPanel: {fileID: 0}
 --- !u!114 &3388919148865815179

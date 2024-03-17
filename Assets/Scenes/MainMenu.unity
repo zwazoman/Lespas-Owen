@@ -1328,6 +1328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6392224993189798724, guid: 0d6c0ad3c6e665e4c90f38868d0429c7, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 8300000, guid: b2d26914beb9bcd40bd3d5e19fd068f6, type: 3}
     m_RemovedComponents:
     - {fileID: 5697297493029328813, guid: 0d6c0ad3c6e665e4c90f38868d0429c7, type: 3}
     m_RemovedGameObjects: []

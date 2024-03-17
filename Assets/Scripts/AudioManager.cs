@@ -24,7 +24,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip playerDeathSound;
     public AudioClip bulletHitSound;
     public AudioClip playerHitSound;
-    public AudioClip startSound;
 
 
 
@@ -52,4 +51,7 @@ public class AudioManager : MonoBehaviour
     {
         SFXSource.PlayOneShot(clip);
     }
+
+    //musiques par Karl Casey @ White Bat Audio
+    //sons par soundly et pixabay
 }
