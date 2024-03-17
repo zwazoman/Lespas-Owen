@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1594001161761640260}
   - component: {fileID: 7789526248993698852}
   - component: {fileID: 2419692648260351037}
-  - component: {fileID: 964398478888386024}
+  - component: {fileID: 3943837258009806818}
   - component: {fileID: -201429429343585719}
   m_Layer: 6
   m_Name: ExplosionSuperScout
@@ -99,7 +99,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 64
@@ -122,7 +122,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.55
---- !u!114 &964398478888386024
+--- !u!114 &3943837258009806818
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

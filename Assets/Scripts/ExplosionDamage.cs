@@ -15,6 +15,7 @@ public class ExplosionDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        print(collision.gameObject);
         if(collision.gameObject.layer != 8)
         {
         collision.gameObject.SendMessage("ApplyDamage", damages);

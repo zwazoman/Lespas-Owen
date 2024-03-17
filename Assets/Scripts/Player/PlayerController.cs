@@ -143,7 +143,6 @@ public class PlayerController : MonoBehaviour
     public void ApplyDamage(int damages)
     {
         hp -= damages;
-        print(hp);
         if(hp <= 0)
         {
             Explode();

@@ -15,7 +15,6 @@ public class EnemyKamikazeBehaviour : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         speed = infos.speed;
-        print(speed);
     }
 
     private void Update()
