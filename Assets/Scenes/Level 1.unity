@@ -7685,7 +7685,7 @@ MonoBehaviour:
   WaveEnemyList:
   - {fileID: 6102696681008362495, guid: 45f0fd888e5598a428642d7517600533, type: 3}
   minEnemySpawnTime: 1
-  maxEnemySpawnTime: 3
+  maxEnemySpawnTime: 4
   minWaveSpawnTimen: 3
   maxWaveSpawnTimen: 8
 --- !u!4 &1309820479
