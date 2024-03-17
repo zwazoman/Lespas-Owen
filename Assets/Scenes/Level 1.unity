@@ -6156,6 +6156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 792542966}
+  _timer: 120
 --- !u!1 &551424533
 GameObject:
   m_ObjectHideFlags: 0
@@ -6642,10 +6643,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1473095770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.646, y: 0.44729632}
-  m_AnchorMax: {x: 0.92685264, y: 0.7235062}
-  m_AnchoredPosition: {x: -313.35, y: 370}
-  m_SizeDelta: {x: -1.3089, y: -86.0693}
+  m_AnchorMin: {x: 0.39274105, y: 1}
+  m_AnchorMax: {x: 0.656, y: 1}
+  m_AnchoredPosition: {x: -2.850006, y: 101}
+  m_SizeDelta: {x: 19.691101, y: 93.930695}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983026139
 MonoBehaviour:

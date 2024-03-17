@@ -8,10 +8,10 @@ using Unity.VisualScripting;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TMP_Text timerText;
-    float _timer;
+    [SerializeField]float _timer;
     void Awake ()
     {
-        _timer = 120;
+        
         timerText.text = _timer.ToString();
     }
 
