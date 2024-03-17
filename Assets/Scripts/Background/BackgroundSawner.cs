@@ -5,10 +5,10 @@ using UnityEngine;
 public class BackgroundSpawner : MonoBehaviour
 {
     [SerializeField]
-    List<GameObject> SoloEnemyList = new List<GameObject>();
+    List<GameObject> BGList = new List<GameObject>();
     [SerializeField] float minBGSpawnTime;
     [SerializeField] float maxBGSpawnTime;
-    Vector2 spawnPoint;
+    [SerializeField] float xSpawn = 10;
 
     private void Start()
     {
@@ -19,9 +19,11 @@ public class BackgroundSpawner : MonoBehaviour
         yield return new WaitForSeconds(2);
         while (PlayerController.instance != null)
         {
-            GameObject randomBG = SoloEnemyList[Random.Range(0, SoloEnemyList.Count)];
+            Vector2 spawnPoint = new Vector2 (xSpawn, Random.Range(-4.2f, 4.2f));
+            GameObject randomBG = BGList[Random.Range(0, BGList.Count)];
             float timeBetweenSpawn = Random.Range(minBGSpawnTime, maxBGSpawnTime);
-            Instantiate(randomBG,spawnPoint,Quaternion.Euler(new Vector3(0,0,-90)));
+            GameObject BGObject = Instantiate(randomBG,spawnPoint,Quaternion.identity);
+            BGObject.transform.localScale *= Random.Range(1.2f,1.8f);
             yield return new WaitForSeconds(timeBetweenSpawn);
         }
 
